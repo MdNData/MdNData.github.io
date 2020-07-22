@@ -95,6 +95,7 @@ header nav ul a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1vw;
+    transition: 0.3s;
 }
 
 header nav ul a:hover {
