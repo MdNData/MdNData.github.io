@@ -57,17 +57,71 @@ body {
     background-image: url(../images/background-super-lighter.png);
 }
 
+header.top {
+    display: flex;
+    height: 4vw;
+    opacity: 0.85;
+    justify-content: space-around;
+    align-items: center;
+}
+
 header h1{
-    text-align: center;
-    margin: 2vw auto;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
+}
+
+header nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #1c2d49;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1vw;
+}
+
+header nav ul a:hover {
+    color: #31e8e8;
 }
 
 header h2 {
     text-align: left;
 }
 
-h3, p, h4 {
+hr {
+    height: 1px;
+    background-color: black;
+    opacity: 0.2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ol {
+    display: inline-flex;
+}
+
+nav ol li.first {
+    display: inline-flex;
+
+}
+
+nav ol li a {
+    margin-right: 2vw;
+    text-decoration: none;
+    color: #1c2d49;
+}
+
+nav ol li a:hover {
+    color: #31e8e8;
+}
+
+h3, p, h4, article span {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
