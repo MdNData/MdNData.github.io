@@ -5,8 +5,28 @@ body {
     background-image: url(../images/background-super-lighter.png);
 }
 
+header {
+    display: flex;
+    width: 99vw;
+    height: 4.2vw;
+}
+
+header a {
+    display: flex;
+    text-decoration: none;
+}
+
+.logo {
+    max-height: 100%; 
+    width: auto;
+    margin-left: 5vw;
+}
+
 header h1 {
-    text-align: center;
+    font-size: 1.66vw;
+    margin-left: 0.5vw;
+    padding: auto auto;
+
 }
 
 footer {
