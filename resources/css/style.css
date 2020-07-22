@@ -5,6 +5,10 @@ body {
     background-image: url(../images/background-super-lighter.png);
 }
 
+header h1 {
+    text-align: center;
+}
+
 footer {
     text-align: center;
 }
