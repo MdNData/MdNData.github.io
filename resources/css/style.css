@@ -1,3 +1,54 @@
+/*******************************************
+ *    Reset propriety of **DESKTOP** browsers
+ *******************************************/
+* { 
+    border:0;
+    padding:0;
+    margin:0;
+    border-spacing:0;
+    font-family: 'Audiowide', sans-serif;
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 /* PAGE STYLES */
 
@@ -8,26 +59,52 @@ body {
 header {
     display: flex;
     width: 99vw;
-    height: 4.2vw;
+    height: 8vw;
+    opacity: 0.85;
+    justify-content: space-around;
 }
 
-header a {
-    display: flex;
+header .logo_a {
     text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7vw 0;
+
 }
 
 .logo {
     max-height: 100%; 
-    width: auto;
-    margin-left: 5vw;
 }
 
 header h1 {
-    font-size: 1.66vw;
+    font-size: 2.4vw;
     margin-left: 0.5vw;
-    padding: auto auto;
-
 }
+
+header nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #1c2d49;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+header nav ul a:hover {
+    color: #31e8e8;
+}
+
+
 
 footer {
     text-align: center;
