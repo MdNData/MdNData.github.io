@@ -116,6 +116,7 @@ nav ol li a {
     margin-right: 2vw;
     text-decoration: none;
     color: #1c2d49;
+    transition: 0.3s;
 }
 
 nav ol li a:hover {
