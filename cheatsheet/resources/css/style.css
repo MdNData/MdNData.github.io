@@ -57,12 +57,16 @@ body {
     background-image: url(../images/background-super-lighter.png);
 }
 
+/* TOP HEADER LOGO, Resources*/
+
 header.top {
     display: flex;
     height: 4vw;
     opacity: 0.85;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
 }
 
 header h1{
