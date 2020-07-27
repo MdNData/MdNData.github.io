@@ -65,7 +65,7 @@ header.navigation {
     width: 100%;
     height: 4vw;
     opacity: 0.85;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fff;
 }
 
@@ -74,7 +74,7 @@ header .logo_a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
+    margin-left: 2vw;
 }
 
 .logo {
@@ -101,7 +101,7 @@ header nav ul{
 }
 
 header nav ul li {
-    margin: auto 2vw;
+    margin: auto 1.5vw;
 }
 
 

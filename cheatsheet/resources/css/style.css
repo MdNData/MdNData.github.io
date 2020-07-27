@@ -125,12 +125,22 @@ nav.content-map {
     margin-left: 17vw;
     margin-right: 2vw;
     margin-bottom: 2vh;
-    font-size: 1.2vw;
+    font-size: 1.7vw;
     padding: 0.5vw;
-    background-color: #246c8c;
-    color: #31e8e8;
-    border: 1px solid #31e8e8;
-    border-radius: 2vw;
+    color: #246c8c;
+}
+
+.content-map ul, .content-map ol {
+    list-style: disc;
+}
+
+.content-map li {
+    line-height: 2vw;
+}
+
+.content-map ul li ul li {
+    margin-left: 1vw;
+    list-style: circle;
 }
 
 nav ol {
@@ -143,10 +153,11 @@ nav ol li.first {
 }
 
 nav ol li a {
-    margin-right: 2vw;
+    margin-right: 3vw;
     text-decoration: none;
     color: #1c2d49;
     transition: 0.3s;
+    font-size: 1.2vw;
 }
 
 nav ol li a:hover {
@@ -177,7 +188,7 @@ footer {
     font-family: Audiowide, cursive;
 }
 
-.work-sans {
+.work-sans, .work-sans a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
