@@ -55,6 +55,7 @@ table {
 
 body {
     background-image: url(../images/background-super-lighter.png);
+    background-color: #f3f3f3;
 }
 
 /* TOP HEADER LOGO, Resources*/
@@ -149,7 +150,6 @@ nav ol {
 
 nav ol li.first {
     display: inline-flex;
-
 }
 
 nav ol li a {
@@ -196,6 +196,10 @@ article p {
     font-size: 1.5vw;
     margin-bottom: 3vw;
     line-height: 2vw;
+}
+
+.no-bottom {
+    margin-bottom: 1vw;
 }
 
 footer {
