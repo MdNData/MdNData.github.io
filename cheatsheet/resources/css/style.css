@@ -123,7 +123,6 @@ nav.content-map {
 
 .content-map section header {
     display: inline-block;
-    margin-left: 17vw;
     margin-right: 2vw;
     margin-bottom: 2vh;
     font-size: 1.7vw;
@@ -172,8 +171,8 @@ h3, p, h4, article span {
 /* MAIN CONTENT */
 
 main section {
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 main section header {
