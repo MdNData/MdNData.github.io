@@ -12,7 +12,7 @@
 
 <body class="audiowide dark-blue">
 
-    <!-- Title -->
+    <!-- START Title -->
 
     <header class='navigation'>
         <section>
@@ -20,8 +20,6 @@
                 <span class="middle-blue"> CheatSheet </span> 
                 for 
                 <span class="light-green">HTML</span>
-                /
-                <span class="light-blue">CSS</span>
             </h1>
 
             <nav>
@@ -36,7 +34,9 @@
 
     <hr>
 
-    <!-- Navigation bar -->
+    <!-- END Title -->
+
+    <!-- START Navigation bar -->
 
     <nav class='content-map'>
         <section>
@@ -107,7 +107,27 @@
                                 <li>
                                     <a href="#spans">span text</a>
                                 </li>
+                                <li>
+                                    <a href="#b-strong">strong and b - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#em-i">em and i (Italic) - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#u">u (underline) - tag</a>
+                                </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href='#title-attr'>tag - attributes</a>
+                                <ul>
+                                    <li>
+                                        <a href="#title-attr">title - attribute</a>
+                                    </li>
+                                    <li>
+                                        <a href="#id-attr">id - attribute</a>
+                                    </li>
+                                </ul>
                         </li>
                     </ul>
                 </li>
@@ -117,11 +137,13 @@
 
     <hr>
 
-    <!-- Main part of the project -->
+    <!-- END Navigation bar -->
+
+    <!-- START Main part of the project -->
 
    <main>
 
-        <!-- Setting HTML file section -->
+        <!-- START Setting HTML file section -->
         <article>
             <section>
                 <header>
@@ -133,7 +155,8 @@
                     </h2>
                 </header>
                 
-                <!-- !DOCTYPE html -->
+                <!-- START !DOCTYPE html -->
+
                 <article id="doctype">
                     <h3>
                         &#60; !DOCTYPE html &#62;
@@ -141,12 +164,16 @@
                     <p>
                         The first line of the file.html must contain this line of code, it is useful to make the browser understand that the HTML language is being used and in particular HTML5 (the latest standard released).
                     </p>
-                    
                 </article>
 
-                <!-- html - tag -->
+                <!-- END !DOCTYPE html -->
+
+                <!-- START html - tag -->
 
                 <article id="html-tag">
+
+                    <!-- START internal html - tag -->
+
                     <div>
                         <h3>&#60; html &#62;</h3>
                         <p>
@@ -154,7 +181,9 @@
                         </p>
                     </div>
 
-                        <!-- lang attribute -->
+                    <!-- END internal html - tag -->
+
+                    <!-- START lang attribute -->
 
                     <div>
                         <h4 id="lang-at" class='middle-blue-2'>╚>  lang="it"</h4>
@@ -168,48 +197,71 @@
                             (if the content is in English).
                         </p>
                     </div>
+
+                     <!-- END lang attribute -->
                     
                 </article>
 
-                <!-- head - tag -->
+                <!-- END html - tag -->
+
+                <!-- START head - tag -->
 
                 <article id="head-tag">
+
+                    <!-- START internal head - tag -->
+
                     <div>
                         <h3>&#60; head &#62;</h3>
                         <p>It must be added just below the html tag, it contains the metadata of the page: technical declarations, not always actually visible on the page.</p>
                     </div>
 
-                    <!-- title -->
+                    <!-- END internal head - tag -->
+
+                    <!-- START title -->
 
                     <div>
                         <h4 id="title_tag" class="middle-blue-2">╚> &#60; title &#62;</h4>
                         <p>It is used to give a name to our page, this name will be displayed at the top of the browser tab, and is inserted between the <span class="dark-green">head</span> tag.</p>
                     </div>
+
+                    <!-- END title -->
+
                 </article>
 
-                <!-- body tag -->
+                <!-- END head - tag -->
+
+                <!-- START body tag -->
 
                 <article>
+
+                    <!-- START internal body - tag -->
+
                     <div>
                         <h3 id='the-body'>&#60; body &#62;</h3>
                         <p>The container of everything that appears on your page. It is always placed under the <span class="dark-green">head</span> tag. All the <span class="dark-green">HTML</span> tags listed below will be contained within this tag.</p>
                     </div>
 
-                    <!-- navigation bar -->
+                    <!-- END internal body - tag -->
+
+                    <!-- START navigation bar -->
 
                     <div>
                         <h4 id="navigation-bar" class="middle-blue-2">╚> &#60; nav &#62;</h4>
                         <p>The nav is used for link blocks such as menus and content tables, it can also be placed inside other tags, or it can be used simply by yourself.</p>
                     </div>
 
-                    <!-- header tag -->
+                    <!-- END navigation bar -->
+
+                    <!-- START header tag -->
 
                     <div>
                         <h4 id='header-tag' class='middle-blue-2'>╚> &#60; header &#62;</h4>
                         <p>Specially created to contain the main title tags.</p>
                     </div>
 
-                    <!-- main tag -->
+                    <!-- END header tag -->
+
+                    <!-- START main tag -->
 
                     <div>
                         <h4 id='main-tag' class='middle-blue-2'>╚> &#60; main &#62;</h4>
@@ -219,28 +271,36 @@
                         <span class="dark-green">header</span>s can.</p>
                     </div>
 
-                    <!-- section tag -->
+                    <!-- END main tag -->
+
+                    <!-- START section tag -->
 
                     <div>
                         <h4 id='section-tag' class='middle-blue-2'>╚> &#60; section &#62;</h4>
                         <p>One of the most used tag, very usefull to sectionide the page in smallest sections with elements that have the same use or purpose.</p>
                     </div>
 
-                    <!-- article tag -->
+                    <!-- END section tag -->
+
+                    <!-- START article tag -->
 
                     <div>
                         <h4 id='article-tag' class='middle-blue-2'>╚> &#60; article &#62;</h4>
                         <p>Article contains parts that make sense for themselves, detached from the main content, can be inserted inside section or vice versa.</p>
                     </div>
 
-                    <!-- aside tag -->
+                    <!-- END article tag -->
+
+                    <!-- START aside tag -->
 
                     <div>
                         <h4 id='aside-tag' class='middle-blue-2'>╚> &#60; aside &#62;</h4>
                         <p>They are used to group additional information such as: bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars.</p>
                     </div>
 
-                    <!-- figure and figcaption tags -->
+                    <!-- END aside tag -->
+
+                    <!-- START figure and figcaption tags -->
 
                     <div>
                         <h4 id='figure-tag' class="middle-blue-2">╚> &#60; figure &#62; and &#60; figcaption &#62;</h4>
@@ -248,21 +308,27 @@
                         <p>Figcaption fits into figure, is used as a visible description of the media in it.</p>
                     </div>
 
-                    <!-- footer - tag --> 
+                    <!-- END figure and figcaption tags -->
+
+                    <!-- START footer - tag --> 
 
                     <div>
                         <h4 id='footer-tag' class='middle-blue-2'>╚> &#60; footer &#62;</h4>
                         <p>It is used to enter final information such as email, site map, phone number etc.</p>
                     </div>
 
+                    <!-- END footer - tag --> 
+
 
                 </article>
 
-                <!-- Text features -->
+                <!-- END body tag -->
+
+                <!-- START Text features -->
 
                 <article>
 
-                    <!-- Headers -->
+                    <!-- START Headers -->
                     <div>
                         <h3 id='headers'>&#60; h1 - h2 - h3 - h4 - h5 - h6 &#62;</h3>
                         <p>They are the titles of the page that indicate the start of a new content, starting from 
@@ -272,27 +338,106 @@
                         the smallest one. They are very important elements both for the reader and for the browser that uses them for the search, if used well they can make your web-site appear first in the search engines.</p>
                     </div>
 
-                    <!-- paragraphs -->
+                    <!-- END Headers -->
+
+                    <!-- START paragraphs -->
 
                     <div>
                         <h3 id='paragraphs'>&#60; p &#62;</h3>
                         <p>They are simply pieces of text. Very useful, it is recommended to use multiple paragraphs instead of using just one creating too complex sentences, it also helps search engines.</p>
                     </div>
 
-                    <!-- spans -->
+                    <!-- END paragraphs -->
+
+                    <!-- START spans -->
 
                     <div>
                         <h3 id='spans'>&#60; span &#62;</h3>
                         <p>They contain short pieces of text or other html, used to separate small pieces of content that are on the same line as other text without affecting the display of the tag that contains it.</p>
                     </div>
 
+                    <!-- END spans -->
+
+                    <!-- START Bold and strong -->
+
+                    <div id='b-strong'>
+                        <h3>&#60; strong &#62; - &#60; b &#62;</h3>
+                        <p>
+                        <span class="dark-green">strong</span>
+                        is used to <strong>enlarge</strong> the text but also to emphasize it not only for the reader but also for the browsers, 
+                        <span class="dark-green">b</span> instead only <b>enlarges</b> it.</p>
+                    </div>
+
+                    <!-- END Bold and strong -->
+
+                    <!-- START em i italic tag -->
+
+                    <div id='em-i'>
+                        <h3>&#60; em &#62; - &#60; i &#62; (Italic)</h3>
+                        <p>
+                            <span class="dark-green">em</span>
+                            is used to make <em>italic</em> text but also to emphasize it not only for the reader but also for the browsers, 
+                            <span class="dark-green">i</span> instead only make it <i>italic</i>.
+                        </p>
+                    </div>
+
+                    <!-- END em i italic tag -->
+
+                    <!-- START u tag -->
+
+                    <div id='u'>
+                        <h3>&#60; u &#62;</h3>
+                        <p>Pull a line below the text, usually specifying <u>errors</u>, or changes to a text also emphasizing it for the browser.</p>
+                    </div>
+
+                    <!-- END u tag -->
+
                 </article>
+
+                <!-- END text features -->
+
+                <!-- START Attributes of tags -->
+                <article>
+                    
+                    <!-- START title attibute -->
+
+                    <div id='title-attr'>
+                        <h3 class="middle-blue-2">title = ' - '</h3>
+                        <p>Allows you to view a text by holding the mouse over an element on the web page for a few seconds</p>
+                    </div>
+
+                    <!-- END title attibute -->
+
+                    <!-- START id attribute -->
+
+                    <div id='id-attr'>
+                        <h3 class='middle-blue-2'>
+                            id = ' - '
+                        </h3>
+                        <p>
+                            They are useful for better specifying what an element consists of, giving it a unique identity, it is also used to embellish and select it with css and js.
+                        </p>
+                    </div>
+
+                    <!-- END id attribute -->
+
+
+
+
+                </article>
+
+                <!-- END Attributes of tags -->
 
             </section>
         </article>
+
+        <!-- END Setting HTML file section -->
+
     </main>
 
-    <!-- Footer -->
+    <!-- END Main part of the project -->
+
+    <!-- START Footer -->
 
     <footer>
         <hr>
@@ -304,6 +449,8 @@
             . All rights reserved.
         </h6>
     </footer>
+
+    <!-- END Footer -->
 
     <!-- Scripts -->
 
