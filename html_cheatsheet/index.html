@@ -18,7 +18,7 @@
     <meta name="url" content="https://mdndata.github.io" />
     <meta name='identifier-URL' content="https://mdndata.github.io" />
     <meta name='directory' content="resources" />
-    <link link rel='icon' type='image/png' href='resources/favicons/favicon.png'>
+    <link rel='icon' type='image/png' href='resources/favicons/favicon.png'>
     <title> 
         HTML | CheatSheet
     </title>
@@ -79,10 +79,22 @@
                             <a href="#head-tag"> head - tag</a>
                             <ul>
                                 <li>
+                                    <a href="#link-meta">╚> link to all meta</a>
+                                </li>
+                                <li>
                                     <a href="#charset">╚> charset - meta</a>
                                 </li>
                                 <li>
                                     <a href="#keywords">╚> keywords - meta</a>
+                                </li>
+                                <li>
+                                    <a href="#viewport">╚> viewport - meta</a>
+                                </li>
+                                <li>
+                                    <a href="#edge">╚> edge - meta</a>
+                                </li>
+                                <li>
+                                    <a href="#favicon">╚> favicon - link</a>
                                 </li>
                                 <li>
                                     <a href="#title_tag">╚> title - tag </a>
@@ -175,8 +187,8 @@
         <!-- START Setting HTML file section -->
         <article>
             <section>
-                <header>
-                    <h2 id="1_settingHTML"> 
+                <header id="1_settingHTML">
+                    <h2> 
                         <span class="middle-blue">1)</span>
                         Setting 
                         <span class="light-green">HTML.html</span> 
@@ -186,24 +198,26 @@
                 
                 <!-- START !DOCTYPE html -->
 
-                <article id="doctype">
-                    <h3>
-                        &lt; !DOCTYPE html &gt;
-                    </h3>
-                    <p>
-                        The first line of the file.html must contain this line of code, it is useful to make the browser understand that the HTML language is being used and in particular HTML5 (the latest standard released).
-                    </p>
+                <article>
+                    <div id="doctype">
+                        <h3>
+                            &lt; !DOCTYPE html &gt;
+                        </h3>
+                        <p>
+                            The first line of the file.html must contain this line of code, it is useful to make the browser understand that the HTML language is being used and in particular HTML5 (the latest standard released).
+                        </p>
+                    </div>
                 </article>
 
                 <!-- END !DOCTYPE html -->
 
                 <!-- START html - tag -->
 
-                <article id="html-tag">
+                <article>
 
                     <!-- START internal html - tag -->
 
-                    <div>
+                    <div id="html-tag">
                         <h3>&lt; html &gt;</h3>
                         <p>
                             It is used to create the structure of the html page, everything inside these tags will be interpreted as html text, also known as the root element.
@@ -214,8 +228,8 @@
 
                     <!-- START lang attribute -->
 
-                    <div>
-                        <h4 id="lang-at" class='middle-blue-2'>╚>  lang="it"</h4>
+                    <div id="lang-at">
+                        <h4 class='middle-blue-2'>╚>  lang="en"</h4>
                         <p>
                             To tell the browser what language our content is displayed in, we need to add
                             <span class="middle-blue-2"><br>lang=""</span>
@@ -235,11 +249,11 @@
 
                 <!-- START head - tag -->
 
-                <article id="head-tag">
+                <article>
 
                     <!-- START internal head - tag -->
 
-                    <div>
+                    <div id="head-tag">
                         <h3>&lt; head &gt;</h3>
                         <p>It must be added just below the html tag, it contains the metadata of the page: technical declarations, not always actually visible on the page.</p>
                     </div>
@@ -253,28 +267,65 @@
                     </div>
                     <!-- END meta -->
 
-                    <!-- START charset meta -->
+                    <!-- START link to all meta -->
+                    <div id='link-meta'>
+                        <h4 class='middle-blue-2'>╚> link to all meta</h4>
+                        <p>
+                            <a href="https://gist.github.com/kevinSuttle/1997924" target="_blank">Here. <br /></a>
+                            A list of all the meta (or almost) that can be used.
+                        </p>
+                    </div>
+                    <!-- END link to all meta -->
 
-                        <h4 id="charset" class='middle-blue-2'>╚> &lt; meta charset="UTF-8" &gt;</h4>
+                    <!-- START charset meta -->
+                    <div id="charset">
+                        <h4 class='middle-blue-2'>╚> &lt; meta charset="UTF-8" &gt;</h4>
                         <p>
                             It is inserted in all the sites, it is used to tell the browser that we will use all the existing fonts, from English to Chinese etc.
                         </p>
-
+                    </div>
                      <!-- END charset meta -->
 
                      <!-- START keywords meta -->
-
-                        <h4 id="keywords" class='middle-blue-2'>╚> &lt; meta name='keywords' content="" /&gt;</h4>
+                     <div id="keywords">
+                        <h4 class='middle-blue-2'>╚> &lt; meta name='keywords' content="" /&gt;</h4>
                         <p>
                             It contains the words that mainly characterize the page, about 13 are recommended and all divided by commas.
                         </p>
-
+                    </div>
                      <!-- END keywords meta -->
+
+                     <!-- START viewport meta -->
+                     <div id="viewport">
+                        <h4 class='middle-blue-2'>╚> &lt; meta name='viewport' content='width=device-width, initial-scale=1.0' /&gt;</h4>
+                        <p>
+                            It is used to specify to the browser that our site will be responsive, and renders it consequently.
+                        </p>
+                    </div>
+                     <!-- END viewport meta -->
+
+                     <!-- START edge compatible meta -->
+                     <div id="edge">
+                        <h4 class='middle-blue-2'>╚> &lt; meta http-equiv='X-UA-Compatible' content='ie=edge' /&gt;</h4>
+                        <p>
+                            It tells the browser that our site is compatible with edge.
+                        </p>
+                    </div>
+                     <!-- END edge compatible meta -->
+
+                     <!-- START favicon compatible meta -->
+                     <div id="favicon">
+                        <h4 class='middle-blue-2'>╚> &lt; link rel='icon' type='image/png' href=" " /&gt;</h4>
+                        <p>
+                            It is used to insert a small image at the top of the page  in the browser, a size of 64x64px is recommended.
+                        </p>
+                    </div>
+                     <!-- END edge compatible meta -->
 
                     <!-- START title -->
 
-                    <div>
-                        <h4 id="title_tag" class="middle-blue-2">╚> &lt; title &gt;</h4>
+                    <div id="title_tag">
+                        <h4 class="middle-blue-2">╚> &lt; title &gt;</h4>
                         <p>It is used to give a name to our page, this name will be displayed at the top of the browser tab, and is inserted between the <span class="dark-green">head</span> tag.</p>
                     </div>
 
@@ -290,8 +341,8 @@
 
                     <!-- START internal body - tag -->
 
-                    <div>
-                        <h3 id='the-body'>&lt; body &gt;</h3>
+                    <div id='the-body'>
+                        <h3>&lt; body &gt;</h3>
                         <p>The container of everything that appears on your page. It is always placed under the <span class="dark-green">head</span> tag. All the <span class="dark-green">HTML</span> tags listed below will be contained within this tag.</p>
                     </div>
 
@@ -299,8 +350,8 @@
 
                     <!-- START navigation bar -->
 
-                    <div>
-                        <h4 id="navigation-bar" class="middle-blue-2">╚> &lt; nav &gt;</h4>
+                    <div id="navigation-bar">
+                        <h4 class="middle-blue-2">╚> &lt; nav &gt;</h4>
                         <p>The nav is used for link blocks such as menus and content tables, it can also be placed inside other tags, or it can be used simply by yourself.</p>
                     </div>
 
@@ -308,8 +359,8 @@
 
                     <!-- START header tag -->
 
-                    <div>
-                        <h4 id='header-tag' class='middle-blue-2'>╚> &lt; header &gt;</h4>
+                    <div id='header-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; header &gt;</h4>
                         <p>Specially created to contain the main title tags.</p>
                     </div>
 
@@ -317,8 +368,8 @@
 
                     <!-- START main tag -->
 
-                    <div>
-                        <h4 id='main-tag' class='middle-blue-2'>╚> &lt; main &gt;</h4>
+                    <div id='main-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; main &gt;</h4>
                         <p>Helps SEO and programmers to find the main part of your page, neither the 
                         <span class="dark-green">footer</span> nor the 
                         <span class="dark-green">nav</span> should be placed inside the main but the 
@@ -329,8 +380,8 @@
 
                     <!-- START section tag -->
 
-                    <div>
-                        <h4 id='section-tag' class='middle-blue-2'>╚> &lt; section &gt;</h4>
+                    <div id='section-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; section &gt;</h4>
                         <p>One of the most used tag, very usefull to sectionide the page in smallest sections with elements that have the same use or purpose.</p>
                     </div>
 
@@ -338,8 +389,8 @@
 
                     <!-- START article tag -->
 
-                    <div>
-                        <h4 id='article-tag' class='middle-blue-2'>╚> &lt; article &gt;</h4>
+                    <div id='article-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; article &gt;</h4>
                         <p>Article contains parts that make sense for themselves, detached from the main content, can be inserted inside section or vice versa.</p>
                     </div>
 
@@ -347,8 +398,8 @@
 
                     <!-- START aside tag -->
 
-                    <div>
-                        <h4 id='aside-tag' class='middle-blue-2'>╚> &lt; aside &gt;</h4>
+                    <div id='aside-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; aside &gt;</h4>
                         <p>They are used to group additional information such as: bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars.</p>
                     </div>
 
@@ -356,8 +407,8 @@
 
                     <!-- START figure and figcaption tags -->
 
-                    <div>
-                        <h4 id='figure-tag' class="middle-blue-2">╚> &lt; figure &gt; and &lt; figcaption &gt;</h4>
+                    <div id='figure-tag'>
+                        <h4 class="middle-blue-2">╚> &lt; figure &gt; and &lt; figcaption &gt;</h4>
                         <p class='no-bottom'>Figure is an element used to enclose media such as images, illustrations, diagrams and code that refers to the main content of the page.</p>
                         <p>Figcaption fits into figure, is used as a visible description of the media in it.</p>
                     </div>
@@ -366,8 +417,8 @@
 
                     <!-- START footer - tag --> 
 
-                    <div>
-                        <h4 id='footer-tag' class='middle-blue-2'>╚> &lt; footer &gt;</h4>
+                    <div id='footer-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; footer &gt;</h4>
                         <p>It is used to enter final information such as email, site map, phone number etc.</p>
                     </div>
 
@@ -383,8 +434,8 @@
                 <article>
 
                     <!-- START Headers -->
-                    <div>
-                        <h3 id='headers'>&lt; h1 - h2 - h3 - h4 - h5 - h6 &gt;</h3>
+                    <div id='headers'>
+                        <h3>&lt; h1 - h2 - h3 - h4 - h5 - h6 &gt;</h3>
                         <p>They are the titles of the page that indicate the start of a new content, starting from 
                         <span class='dark-green'>h1</span>
                         the largest title (there should be only / at least one) to 
@@ -396,8 +447,8 @@
 
                     <!-- START paragraphs -->
 
-                    <div>
-                        <h3 id='paragraphs'>&lt; p &gt;</h3>
+                    <div id='paragraphs'>
+                        <h3>&lt; p &gt;</h3>
                         <p>They are simply pieces of text. Very useful, it is recommended to use multiple paragraphs instead of using just one creating too complex sentences, it also helps search engines.</p>
                     </div>
 
@@ -405,8 +456,8 @@
 
                     <!-- START spans -->
 
-                    <div>
-                        <h3 id='spans'>&lt; span &gt;</h3>
+                    <div id='spans'>
+                        <h3>&lt; span &gt;</h3>
                         <p>They contain short pieces of text or other html, used to separate small pieces of content that are on the same line as other text without affecting the display of the tag that contains it.</p>
                     </div>
 
@@ -515,7 +566,7 @@
 
     <footer>
         <hr>
-        <h6 class="dark-green">alfa 1.4.3.34- 
+        <h6 class="dark-green">alfa 1.4.3.35- 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>
