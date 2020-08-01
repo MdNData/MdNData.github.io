@@ -108,7 +108,7 @@ header section nav ul li {
 header section nav ul a {
     text-decoration: none;
     color: #1c2d49;
-    font-weight: bold;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 1vw;
     transition: 0.3s;
