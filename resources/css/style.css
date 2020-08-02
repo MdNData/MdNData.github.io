@@ -175,9 +175,16 @@ div.header-spaced {
     line-height: 4vw;
 }
 
+.welcome section img {
+    width: 50vw;
+    max-height: 100%;
+    position: absolute;
+}
+
 h2.main {
     text-align: center;
     font-size: 2.2vw;
+    margin-top: 3.5vw;
 }
 
 footer {
