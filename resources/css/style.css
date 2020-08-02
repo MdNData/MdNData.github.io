@@ -125,7 +125,14 @@ header section nav ul a {
     opacity: 0.85;
 }
 
-header section nav ul a:hover {
+header section nav ul li:hover a{
+    color: #31e8e8;
+}
+
+header section nav ul li:hover ul li a{
+    color: #1c2d49;
+}
+header section nav ul li ul li a:hover{
     color: #31e8e8;
 }
 
@@ -162,29 +169,21 @@ hr {
 
 /* MAIN CONTENT */ 
 
-header.welcome-img {
-    background-image: url('../images/placeholder.svg');
-    background-size: 65vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
+div.header-spaced {
+    height: 4vw;
 }
 
-main h2 , main span, main i{
-    text-align: center;
-    font-size: 2.2vw;
-    font-family: 'Work sans';
-    font-weight: 600;
+.welcome section {
+    padding-left: 25%;
+    padding-right: 25%; 
+    padding-top: 2vw;
     line-height: 4vw;
 }
 
-main h2 {
-    margin-top: 12vh;
-    width: 37vw;
+h2.main {
+    text-align: center;
+    font-size: 2.2vw;
 }
-
 
 footer {
     text-align: center;
