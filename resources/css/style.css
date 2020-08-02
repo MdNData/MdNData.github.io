@@ -6,7 +6,7 @@
     padding:0;
     margin:0;
     border-spacing:0;
-    font-family: 'Audiowide', sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
@@ -63,7 +63,8 @@ body {
 header.navigation {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index:99;
+    box-shadow: 0 2px 3px rgba(175, 175, 175, 0.5);
 }
 
 header.navigation section{
@@ -79,7 +80,7 @@ header section .logo_a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2vw;
+    margin-left: 5vw;
 }
 
 .logo {
@@ -103,6 +104,7 @@ header section nav {
 
 header section nav ul{
     display: inline-flex;
+    margin-right: 5vw;
 }
 
 header section nav ul li {
@@ -153,13 +155,13 @@ li.resources:hover ul {
     background-color: #fff;
     border-bottom-right-radius: 1vw;
     border-bottom-left-radius: 1vw;
-    z-index: 2;
+    z-index: 98;
 }
 
 li.resources:hover ul li {
-    height: 2vw;
+    height: 2.5vw;
     margin: 0 0;
-    width: 7.2vw;
+    width: 6.3vw;
 }
 
 /* MAIN CONTENT */ 
@@ -179,12 +181,15 @@ div.header-spaced {
     width: 50vw;
     max-height: 100%;
     position: absolute;
+    z-index: 96;
 }
 
 h2.main {
+    position: relative;
     text-align: center;
-    font-size: 2.2vw;
+    font-size: 2.3vw;
     margin-top: 3.5vw;
+    z-index: 97;
 }
 
 footer {
