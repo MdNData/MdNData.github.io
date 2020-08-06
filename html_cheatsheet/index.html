@@ -80,7 +80,7 @@
 
     <!-- END Title -->
 
-    <div class='header-spaced'>
+    <div id='go-top' class='header-spaced'>
         &nbsp;
     </div>
 
@@ -220,14 +220,36 @@
                         </li>
                         <li>
                             <a href='#title-attr'>tag - attributes</a>
-                                <ul>
-                                    <li>
-                                        <a href="#title-attr">title - attribute</a>
-                                    </li>
-                                    <li>
-                                        <a href="#id-attr">id - attribute</a>
-                                    </li>
-                                </ul>
+                            <ul>
+                                <li>
+                                    <a href="#title-attr">title - attribute</a>
+                                </li>
+                                <li>
+                                    <a href="#id-attr">id - attribute</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href='#img-tag'>media - tag</a>
+                            <ul>
+                                <li>
+                                    <a href="#img-tag">img - tag </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href='#ol-tag'>lists</a>
+                            <ul>
+                                <li>
+                                    <a href="#ol-tag"> ol -tag </a>
+                                </li>
+                                <li>
+                                    <a href="#ul-tag"> ul -tag </a>
+                                </li>
+                                <li>
+                                    <a href="#li-tag"> li -tag </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -262,8 +284,14 @@
                             &lt; !DOCTYPE html &gt;
                         </h3>
                         <p>
-                            The first line of the file.html must contain this line of code, it is useful to make the browser understand that the HTML language is being used and in particular HTML5 (the latest standard released).
+                            The first line of the file.html must contain this line of code, it is useful to make the browser understand that the HTML language is being used and in particular the latest standard released.
                         </p>
+                        <code>
+                            &lt; !DOCTYPE html &gt;<br />
+                            .<br />
+                            ..<br />
+                            ...
+                        </code>
                     </div>
                 </article>
 
@@ -280,6 +308,11 @@
                         <p>
                             It is used to create the structure of the html page, everything inside these tags will be interpreted as html text, also known as the root element.
                         </p>
+                        <code>
+                            <span class="light-green">&lt; !DOCTYPE html &gt;<br /></span>
+                                &lt;html&gt; <br><br>
+                                &lt;/html&gt;<br />
+                        </code>
                     </div>
 
                     <!-- END internal html - tag -->
@@ -314,6 +347,16 @@
                     <div id="head-tag">
                         <h3>&lt; head &gt;</h3>
                         <p>It must be added just below the html tag, it contains the metadata of the page: technical declarations, not always actually visible on the page.</p>
+                        <code>
+                            <span class="dark-green">&lt; !DOCTYPE html &gt;<br /></span>
+                            <pre>
+ <span class="light-green">&lt;html</span> lang="en" <span class="light-green">&gt; </span> 
+    &lt;head&gt;
+
+    &lt;/head&gt;
+<span class="light-green">&lt;/html&gt; </span> 
+                            </pre>
+                        </code>
                     </div>
 
                     <!-- END internal head - tag -->
@@ -640,23 +683,23 @@
 
                     <!-- END kbd tag -->
 
-                    <!-- START kbd tag -->
+                    <!-- START var tag -->
 
                     <div id='var'>
                         <h3>&lt; var &gt;</h3>
                         <p>Specifies that what's inside this <var>tag</var> is a variable.</p>
                     </div>
 
-                    <!-- END kbd tag -->
+                    <!-- END var tag -->
 
-                    <!-- START kbd tag -->
+                    <!-- START pre tag -->
 
                     <div id='pre'>
                         <h3>&lt; pre &gt;</h3>
                         <p>All the text in this tag will be reported with the same spaces, without removing any space as happens with the other text-tags.</p>
                     </div>
 
-                    <!-- END kbd tag -->
+                    <!-- END pre tag -->
 
                 </article>
 
@@ -694,10 +737,86 @@
 
                 <!-- END Attributes of tags -->
 
+                <!-- START Media tag -->
+
+                <article>
+                    
+                    <!-- START img tag -->
+
+                    <div id='img-tag'>
+                        <h3>
+                            &lt; img 
+                            <span class="middle-blue-2">src="path" alt="desription"</span>
+                            /&gt; 
+                        </h3>
+                        <p>
+                            This element is used to add images to the page. <br /> 
+                            It has 2 required attributes : <br /><br />
+                            - <span class='middle-blue-2'>src</span> attribute is used to specify where the image we want to view is located, whether it is on the PC or on an online server. <br /><br />
+                            - <span class="middle-blue-2">alt</span> attribute, it is used to describe an image, and if the image is not loaded make this text appear in its place, and above all it improves the site making it more visible among the search engine results.
+                        </p>
+                    </div>
+
+                    <!-- END img tag -->
+                </article>
+
+                <!-- END Media tag -->
+
+                <!-- START lists -->
+
+                <article>
+                    
+                    <!-- START ol tag -->
+
+                    <div id='ol-tag'>
+                        <h3>
+                            &lt; ol &gt; 
+                        </h3>
+                        <p>
+                            It creates an ordered list with numbers.
+                        </p>  
+                    </div>
+
+                    <!-- END ol tag -->
+
+                    <!-- START ul tag -->
+
+                    <div id='ul-tag'>
+                        <h3>
+                            &lt; ul &gt; 
+                        </h3>
+                        <p>
+                            It creates an unordered list with circles.
+                        </p>  
+                    </div>
+
+                    <!-- END ul tag -->
+
+                    <!-- START li tag -->
+
+                    <div id='li-tag'>
+                        <h3>
+                            ╚> &lt; li &gt; 
+                        </h3>
+                        <p>
+                            The <span class="middle-blue-2"> li </span> items are the data of the list, without them the list would not make sense to exist.
+                        </p>  
+                    </div>
+
+                    <!-- END li tag -->
+
+                </article>
+
+                <!-- END lists -->
+
             </section>
         </article>
 
         <!-- END Setting HTML file section -->
+
+        <div class='go-top'>
+            <a href="#go-top" title='Return to the top of the page.'>↑</a>
+        </div>
 
     </main>
 
@@ -707,7 +826,7 @@
 
     <footer>
         <hr>
-        <h6 class="dark-green">alfa 1.4.3.36- 
+        <h6 class="dark-green">alfa 1.5.3.38- 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>
