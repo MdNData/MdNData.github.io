@@ -27,22 +27,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
 </head>
 
-<body class="audiowide dark-blue">
+<body class="dark-blue">
 
     <!-- START Title -->
 
     <header class='navigation'>
         <section>
-            <h1 title='All things to know about HTML/CSS'>
-                <span class="middle-blue"> CheatSheet </span> 
+            <h1 class='audiowide' title='All things to know about HTML/CSS'>
+                <span class="middle-blue audiowide"> CheatSheet </span> 
                 for 
-                <span class="light-green">HTML</span>
+                <span class="light-green audiowide">HTML</span>
             </h1>
 
             <nav>
                 <ul>
                     <li>
-                        <a href="../index.html" title='Return to the home page.'>Home</a>
+                        <a class='audiowide' href="../index.html" title='Return to the home page.'>Home</a>
                     </li>
                 </ul>
             </nav>
@@ -99,6 +99,15 @@
                                 <li>
                                     <a href="#title_tag">╚> title - tag </a>
                                 </li>
+                                <li>
+                                    <a href="#style_tag">╚> style - tag </a>
+                                </li>
+                                <li>
+                                    <a href="#external_style_tag">╚> import external style - tag </a>
+                                </li>
+                                <li>
+                                    <a href="#script_tag">╚> script - tag </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -143,6 +152,9 @@
                                     <a href="#spans">span text</a>
                                 </li>
                                 <li>
+                                    <a href="#br">br - tag</a>
+                                </li>
+                                <li>
                                     <a href="#b-strong">strong and b - tag</a>
                                 </li>
                                 <li>
@@ -152,10 +164,22 @@
                                     <a href="#u">u (underline) - tag</a>
                                 </li>
                                 <li>
+                                    <a href="#s">s (deleted) - tag</a>
+                                </li>
+                                <li>
                                     <a href="#code">code - tag</a>
                                 </li>
                                 <li>
                                     <a href="#samp">samp - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#kbd">kbd - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#var">var - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#pre">pre - tag</a>
                                 </li>
                             </ul>
                         </li>
@@ -331,6 +355,36 @@
 
                     <!-- END title -->
 
+                    <!-- START style -->
+
+                    <div id="style_tag">
+                        <h4 class="middle-blue-2">╚> &lt; style &gt;</h4>
+                        <p>Allows the addition of CSS code inside this tag. <br />CSS is used to change the style of HTML elements.</p>
+                    </div>
+
+                    <!-- END style -->
+
+                    <!-- <link href="./resources/css/style.css" rel="stylesheet" type="text/css"> -->
+
+                    <!-- START external import style -->
+
+                    <div id="external_style_tag">
+                        <h4 class="middle-blue-2">╚> &lt; link href="path" rel="stylesheet" type="text/css" &gt;</h4>
+                        <p>Import an external CSS file, in order to have the page styles organized in external files, we can import as many as we want.</p>
+                    </div>
+
+                    <!-- END external import style -->
+
+                    <!-- START external import style -->
+
+                    <div id="script_tag">
+                        <h4 class="middle-blue-2">╚> &lt; script &gt;</h4>
+                        <p>Allows the addition of JavaScript code inside this tag. <br />JS is used to make HTML elements interactive.</p>
+                    </div>
+
+                    <!-- END external import style -->
+
+
                 </article>
 
                 <!-- END head - tag -->
@@ -463,6 +517,15 @@
 
                     <!-- END spans -->
 
+                    <!-- START spans -->
+
+                    <div id='br'>
+                        <h3>&lt; br /&gt;</h3>
+                        <p>Stop the current line of text and start a new <br> one in the next line below.</p>
+                    </div>
+
+                    <!-- END spans -->
+
                     <!-- START Bold and strong -->
 
                     <div id='b-strong'>
@@ -497,6 +560,15 @@
 
                     <!-- END u tag -->
 
+                    <!-- START s tag -->
+
+                    <div id='s'>
+                        <h3>&lt; s &gt;</h3>
+                        <p>Specifies that what is inside this <s>tag</s> is a piece of text that is no longer valid.</p>
+                    </div>
+
+                    <!-- END s tag -->
+
                     <!-- START code tag -->
 
                     <div id='code'>
@@ -515,7 +587,32 @@
 
                     <!-- END samp tag -->
 
+                    <!-- START kbd tag -->
 
+                    <div id='kbd'>
+                        <h3>&lt; kbd &gt;</h3>
+                        <p>Specifies that what is inside this <kbd>tag</kbd> is code that need to be entered by the user such as "<kbd>ctrl</kbd> + <kbd>c</kbd>"</p>
+                    </div>
+
+                    <!-- END kbd tag -->
+
+                    <!-- START kbd tag -->
+
+                    <div id='var'>
+                        <h3>&lt; var &gt;</h3>
+                        <p>Specifies that what's inside this <var>tag</var> is a variable.</p>
+                    </div>
+
+                    <!-- END kbd tag -->
+
+                    <!-- START kbd tag -->
+
+                    <div id='pre'>
+                        <h3>&lt; pre &gt;</h3>
+                        <p>All the text in this tag will be reported with the same spaces, without removing any space as happens with the other text-tags.</p>
+                    </div>
+
+                    <!-- END kbd tag -->
 
                 </article>
 
@@ -566,7 +663,7 @@
 
     <footer>
         <hr>
-        <h6 class="dark-green">alfa 1.4.3.35- 
+        <h6 class="dark-green">alfa 1.4.3.36- 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>
