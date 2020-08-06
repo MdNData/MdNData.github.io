@@ -164,6 +164,11 @@ header section h2 {
     text-align: left;
 }
 
+div.header-spaced {
+    height: 4vw;
+}
+
+
 /* CONTENT MAP */
 
 nav.content-map {
@@ -214,6 +219,10 @@ nav ol li a:hover {
 
 
 
+
+footer {
+    text-align: center;
+}
 
 /* FONTS */
 

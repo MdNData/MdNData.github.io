@@ -164,6 +164,11 @@ header section h2 {
     text-align: left;
 }
 
+div.header-spaced {
+    height: 4vw;
+}
+
+
 /* CONTENT MAP */
 
 nav.content-map {
@@ -214,10 +219,6 @@ nav ol li a:hover {
 
 /* MAIN CONTENT */
 
-div.header-spaced {
-    height: 4vw;
-}
-
 main section {
     padding-left: 25%;
     padding-right: 25%;
@@ -226,6 +227,10 @@ main section {
 main section header {
     padding: 2vw 0;
     font-size: 2vw;
+}
+
+article div {
+    padding-top: 4vw;
 }
 
 article h3 {
@@ -241,7 +246,6 @@ article h4 {
 
 article p {
     font-size: 1.5vw;
-    margin-bottom: 3vw;
     line-height: 2vw;
 }
 
