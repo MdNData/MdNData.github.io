@@ -168,6 +168,29 @@ div.header-spaced {
     height: 4vw;
 }
 
+.continuos-changing-color {
+    animation: change 2s infinite;
+}
+@keyframes change {
+    0%{
+        color: #33ea9b;
+    }
+    20%{
+        color: #39ff14;
+    }
+    40%{
+        color: #ccff00;
+    }
+    60%{
+        color: #fe4164;
+    }
+    80%{
+        color: #15f4ee;
+    }
+    100%{
+        color: #33ea9b;
+    }
+}
 
 /* CONTENT MAP */
 

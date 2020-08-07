@@ -38,7 +38,7 @@
             <h1 class='audiowide' title='All things to know about JavaScript'>
                 <span class="middle-blue audiowide"> CheatSheet </span> 
                 for 
-                <span class="light-green audiowide">JavaScript</span>
+                <span id='surprize' class="light-green audiowide">JavaScript</span>
             </h1>
             <nav>
                 <ul>
@@ -147,6 +147,15 @@
                                 </li>
                                 <li>
                                     <a href="#append-child">.appendChild </a>
+                                </li>
+                                <li>
+                                    <a href="#remove-child">.removeChild </a>
+                                </li>
+                                <li>
+                                    <a href="#hide">.hidden </a>
+                                </li>
+                                <li>
+                                    <a href="#onclick">.onclick </a>
                                 </li>
                             </ul>
                         </li>
@@ -380,7 +389,7 @@
 
                     <!-- END .createElement -->
 
-                    <!-- START .createElement -->
+                    <!-- START .appendChild -->
 
                     <div id='append-child'>
                         <h3>.appendChild()</h3>
@@ -410,7 +419,63 @@
                         </code>
                     </div>
 
-                    <!-- END .createElement -->
+                    <!-- END .appendChild -->
+
+                    <!-- START .removeChild -->
+
+                    <div id='remove-child'>
+                        <h3>.removeChild()</h3>
+                        <p>
+                           Similar to .appendChild() only that instead of adding, it removes.
+                        </p>
+                    </div>
+
+                    <!-- END .removeChild -->
+
+                    <!-- START .hidden -->
+
+                    <div id='hide'>
+                        <h3>.hidden = true/false</h3>
+                        <p>
+                           Hide the selected HTML element.
+                        </p>
+                        <code>
+                        newP.hidden = true;<br />
+                        <span class="dark-green">//with true the element be hidden
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END .hidden -->
+
+                    <!-- START .onclick -->
+
+                    <div id='onclick'>
+                        <h3>.onclick = function;</h3>
+                        <p>
+                           We can add interactions with the DOM via events.
+                        </p>
+                        <br />
+                        <p>
+                            .onclick allows you to add a function to be started when interacting with an element via a click.
+                        </p><br />
+                        <p>Try clicking on the word JavaScript in the top navigation bar! This happens thanks to onclick!</p>
+                        <code>
+                            let element = document.querySelector("button");<br />
+                            <span class="dark-green">// select the element
+                            </span>
+                            <br /><br />
+                            function turnButtonRed (){ ... }<br />
+                            <span class="dark-green">// make a function to change the style of selected element
+                            </span>
+                            <br /><br />
+                            element.onclick = turnButtonRed;<br />
+                            <span class="dark-green">// create the event and wait for it to happen
+                            </span>
+                        </code>
+                    </div>
+
+                    <!-- END .onclick -->
                 
                 
             </section>
