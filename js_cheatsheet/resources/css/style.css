@@ -207,9 +207,6 @@ nav.content-map {
     color: #246c8c;
 }
 
-.content-map ul, .content-map ol {
-    list-style: disc;
-}
 
 .content-map li {
     line-height: 2vw;
@@ -238,6 +235,10 @@ nav ol li a {
 
 nav ol li a:hover {
     color: #31e8e8;
+}
+
+nav ol li span {
+    cursor: pointer;
 }
 
 code {

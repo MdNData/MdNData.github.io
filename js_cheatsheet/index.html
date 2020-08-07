@@ -96,7 +96,7 @@
             <header class="dark-green">
                 <h2 class="work-sans" title='Content Map'>Content Map : </h2>
             </header>
-             <ol class='work-sans' title='Go to ...'>
+             <ol id="hide-this" class='work-sans' title='Go to ...'>
                 <li class="first">
                     <div><a href="#JSfile">JavaScript Main Rules </a></div>
                     <ul>
@@ -117,8 +117,8 @@
                     <div><a href="#js+html">JavaScript + HTML </a></div>
                     <ul>
                         <li class="second">
-                            <a href="#script-tag">script - tag</a>
-                            <ul>
+                            <span title="open/close"> script - tag</span>
+                            <ul hidden>
                                 <li>
                                     <a href="#defer">╚> defer - attribute</a>
                                 </li>
@@ -128,8 +128,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#DOM">DOM</a>
-                            <ul>
+                            <span  title="open/close">DOM</span>
+                            <ul hidden>
                                 <li>
                                     <a href="#innerHTML">innerHTML </a>
                                 </li>
@@ -156,6 +156,12 @@
                                 </li>
                                 <li>
                                     <a href="#onclick">.onclick </a>
+                                </li>
+                                <li>
+                                    <a href="#add-event">.addEventListener </a>
+                                </li>
+                                <li>
+                                    <a href="#remove-event">.removeEventListener </a>
                                 </li>
                             </ul>
                         </li>
@@ -476,6 +482,46 @@
                     </div>
 
                     <!-- END .onclick -->
+
+                    <!-- START .addEventListener -->
+
+                    <div id='add-event'>
+                        <h3>.addEventListener( 'event', function );</h3>
+                        <p>
+                           This function waits for a specific event to happen and starts the assigned function, takes 2 arguments, the event type as a string and the event hadler function.
+                        </p>
+                        <code>
+                            let element = document.querySelector("button");<br />
+                            <span class="dark-green">// select the element
+                            </span>
+                            <br /><br />
+                            function turnButtonRed (){ ... }<br />
+                            <span class="dark-green">// make a function to change the style of selected element
+                            </span>
+                            <br /><br />
+                            element.addEventListener('click', turnButtonRed);<br />
+                            <span class="dark-green">// create the event and wait for it to happen
+                            </span>
+                        </code>
+                    </div>
+
+                    <!-- END .addEventListener -->
+
+                    <!-- START .removeEventListener -->
+
+                    <div id='remove-event'>
+                        <h3>.removeEventListener( 'event', function );</h3>
+                        <p>
+                           This function removes an event.
+                        </p>
+                        <code>
+                            element.removeEventListener('click', turnButtonRed);<br />
+                            <span class="dark-green">// remove the event
+                            </span>
+                        </code>
+                    </div>
+
+                    <!-- END .removeEventListener -->
                 
                 
             </section>
