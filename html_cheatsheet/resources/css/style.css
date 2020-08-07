@@ -236,6 +236,7 @@ nav ol li a:hover, div a:hover{
 nav ol li span {
     cursor: pointer;
     transition: 0.3s;
+    font-size: 1.2vw;
 }
 
 nav ol li span:hover {

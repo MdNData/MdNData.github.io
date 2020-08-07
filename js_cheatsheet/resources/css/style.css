@@ -201,6 +201,14 @@ nav.content-map {
 }
 
 nav.content-map {
+    position: fixed;
+    width: 24%;
+    overflow: scroll;
+    height: 93vh;
+    background-color: #fff;
+}
+
+nav.content-map {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -237,7 +245,6 @@ nav.content-map::-webkit-scrollbar-thumb {
 }
 
 nav ol {
-    display: flex;
 }
 
 nav ol li.first {
@@ -259,6 +266,7 @@ nav ol li a:hover, div a:hover{
 nav ol li span {
     cursor: pointer;
     transition: 0.3s;
+    font-size: 1.2vw;
 }
 
 nav ol li span:hover {
