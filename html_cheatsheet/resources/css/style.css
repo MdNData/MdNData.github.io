@@ -148,9 +148,7 @@ li.resources:hover ul {
     border-bottom-right-radius: 1vw;
     border-bottom-left-radius: 1vw;
     z-index: 98;
-    -moz-box-shadow:    0 2px 3px rgba(175, 175, 175, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(175, 175, 175, 0.5);
-    box-shadow:         0 2px 3px rgba(175, 175, 175, 0.5);
+    box-shadow:         0 3px 3px rgba(175, 175, 175, 0.5);
 }
 
 li.resources:hover ul li {
@@ -172,16 +170,34 @@ div.header-spaced {
 /* CONTENT MAP */
 
 nav.content-map {
-    margin-top: 3vh;
+    position: fixed;
+    width: 24%;
+    overflow: scroll;
+    height: 93vh;
+    background-color: #fff;
+}
+
+nav.content-map {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+nav.content-map::-webkit-scrollbar {
+  width: 11px;
+}
+nav.content-map::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+nav.content-map::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 .content-map section header {
-    display: inline-block;
-    margin-right: 2vw;
-    margin-bottom: 2vh;
     font-size: 1.7vw;
     padding: 0.5vw;
     color: #246c8c;
+    text-align: center;
 }
 
 .content-map ul, .content-map ol {
@@ -198,11 +214,11 @@ nav.content-map {
 }
 
 nav ol {
-    display: inline-flex;
+    display: flex;
 }
 
 nav ol li.first {
-    display: inline-flex;
+    margin-left: 2vw;
 }
 
 nav ol li a , div a{
@@ -214,6 +230,15 @@ nav ol li a , div a{
 }
 
 nav ol li a:hover, div a:hover{
+    color: #31e8e8;
+}
+
+nav ol li span {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ol li span:hover {
     color: #31e8e8;
 }
 

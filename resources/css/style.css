@@ -158,9 +158,7 @@ li.resources:hover ul {
     border-bottom-right-radius: 1vw;
     border-bottom-left-radius: 1vw;
     z-index: 98;
-    -moz-box-shadow:    0 2px 3px rgba(175, 175, 175, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(175, 175, 175, 0.5);
-    box-shadow:         0 2px 3px rgba(175, 175, 175, 0.5);
+    box-shadow:         0 3px 3px rgba(175, 175, 175, 0.5);
 }
 
 li.resources:hover ul li {

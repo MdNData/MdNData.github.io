@@ -148,9 +148,7 @@ li.resources:hover ul {
     border-bottom-right-radius: 1vw;
     border-bottom-left-radius: 1vw;
     z-index: 98;
-    -moz-box-shadow:    0 2px 3px rgba(175, 175, 175, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(175, 175, 175, 0.5);
-    box-shadow:         0 2px 3px rgba(175, 175, 175, 0.5);
+    box-shadow:         0 3px 3px rgba(175, 175, 175, 0.5);
 }
 
 li.resources:hover ul li {
@@ -195,18 +193,39 @@ div.header-spaced {
 /* CONTENT MAP */
 
 nav.content-map {
-    margin-top: 3vh;
+    position: fixed;
+    width: 24%;
+    overflow: scroll;
+    height: 93vh;
+    background-color: #fff;
+}
+
+nav.content-map {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+nav.content-map::-webkit-scrollbar {
+  width: 11px;
+}
+nav.content-map::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+nav.content-map::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
 }
 
 .content-map section header {
-    display: inline-block;
-    margin-right: 2vw;
-    margin-bottom: 2vh;
     font-size: 1.7vw;
     padding: 0.5vw;
     color: #246c8c;
+    text-align: center;
 }
 
+.content-map ul, .content-map ol {
+    list-style: disc;
+}
 
 .content-map li {
     line-height: 2vw;
@@ -218,14 +237,14 @@ nav.content-map {
 }
 
 nav ol {
-    display: inline-flex;
+    display: flex;
 }
 
 nav ol li.first {
-    display: inline-flex;
+    margin-left: 2vw;
 }
 
-nav ol li a {
+nav ol li a , div a{
     margin-right: 3vw;
     text-decoration: none;
     color: #1c2d49;
@@ -233,43 +252,18 @@ nav ol li a {
     font-size: 1.2vw;
 }
 
-nav ol li a:hover {
+nav ol li a:hover, div a:hover{
     color: #31e8e8;
 }
 
 nav ol li span {
     cursor: pointer;
+    transition: 0.3s;
 }
 
-code {
-    display: block;
-    padding: 1vw;
-    border-radius: 1vw;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: #33c3ea;
-    margin-top: 1vw;
+nav ol li span:hover {
+    color: #31e8e8;
 }
-
-
-.go-top {
-    position: fixed;
-    right: 2vw;
-    bottom: 3vw;
-    width: 2vw;
-    height: auto;
-    background-color: #33c3ea;
-    box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
-    border-radius: 0.8vw;
-}
-
-.go-top:hover {
-    background-color: #1c2d49;
-}
-
-.go-top a {
-    font-size: 2.5vw;
-}
-
 
 /* MAIN CONTENT */
 
@@ -279,7 +273,7 @@ main section {
 }
 
 main section header {
-    padding: 6vw 0 0 0;
+    padding: 2vw 0;
     font-size: 2vw;
 }
 
@@ -303,8 +297,37 @@ article p {
     line-height: 2vw;
 }
 
+code {
+    display: block;
+    padding: 1vw;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #33c3ea;
+    margin-top: 1vw;
+}
 
+.no-bottom {
+    margin-bottom: 1vw;
+}
 
+.go-top {
+    position: fixed;
+    right: 2vw;
+    bottom: 3vw;
+    width: 2vw;
+    height: auto;
+    background-color: #33c3ea;
+    box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
+    border-radius: 0.8vw;
+}
+
+.go-top:hover {
+    background-color: #1c2d49;
+}
+
+.go-top a {
+    font-size: 2.5vw;
+}
 
 footer {
     text-align: center;
@@ -316,7 +339,7 @@ footer {
     font-family: Audiowide, cursive;
 }
 
-.work-sans {
+.work-sans, .work-sans a {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
