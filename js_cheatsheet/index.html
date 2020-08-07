@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name='keywords' content="MdN, Data, Software, JS, Resources, Web, development, company, site, e-commerce, professional, design, hosting" />
+    <!-- meta description consiglia circa 150 parole -->
+    <meta name='description' content="Here you can find everything you need to know about JS. A complete guide on how to use all JS rules and what they are for. Welcome to MdN Data Software." />
+    <meta name='subject' content='JS Resources CheatSheet | MdN Data Software Web Development Company' />
+    <meta name="copyright" content="" />
+    <!-- robots index e follow, serve per dire a google di mettere la pagina nelle ricerce o se possono seguire i link dentro a questa pagina -->
+    <meta name="robots" content="index,follow" />
+    <meta name="revised" content="SC. MdN Data Software S.R.L." />
+    <meta name='Classification' content="Business" />
+    <meta name="author" content="Mirica Dragos-Neculai">
+    <meta name="owner" content="MdN Data Software" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <meta name="url" content="" />
+    <meta name='identifier-URL' content="https://mdndata.github.io" />
+    <meta name='directory' content="JS" />
+    <link rel='icon' type='image/png' href='resources/favicons/favicon.png'>
+    <title>
+        JS | CheatSheet
+    </title>
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <script src='./resources/script/script.js' type="text/javascript" async></script>
+
+</head>
+
+<body class="dark-blue">
+
+    <!-- START Title -->
+
+     <header class='navigation'>
+        <section>
+            <h1 class='audiowide' title='All things to know about JavaScript'>
+                <span class="middle-blue audiowide"> CheatSheet </span> 
+                for 
+                <span class="light-green audiowide">JavaScript</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html" title='Go to homepage.'>Home</a>
+                    </li>
+                    <li>
+                        <a href="#" title='More about us.'>About us</a>
+                    </li>
+                    <li>
+                        <a href="#" title='See our most used services.'>Services</a>
+                    </li>
+                    <li>
+                        <a href="#" title='Finished Projects.'>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" title='Our most used technologies.'>Technologies</a>
+                    </li>
+                    <li class='resources'>
+                        <a href="#" title='Find some tutorials and guides made by us.'>Resources</a>
+                        <ul>
+                            <li>
+                                <a href="../html_cheatsheet/index.html" title="HTML - CheatSheet">HTML</a>
+                            </li>
+                             <li>
+                                <a href="../css_cheatsheet/index.html" title="CSS - CheatSheet">CSS</a>
+                            </li>
+                            <li>
+                                <a href="#" title="JS - CheatSheet">JS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Let's stay in touch!">Contact Us</a>
+                    </li>
+                </ul>
+              </nav>  
+        </section>
+    </header>
+    <!-- END Headers / navigation bar-->
+
+
+    <hr>
+
+    <!-- END Title -->
+
+     <div id='go-top' class='header-spaced'>
+        &nbsp;
+    </div>
+
+    <!-- START Internal Navigation Bar -->
+
+    <nav class="content-map">
+        <section>
+            <header class="dark-green">
+                <h2 class="work-sans" title='Content Map'>Content Map : </h2>
+            </header>
+             <ol class='work-sans' title='Go to ...'>
+                <li class="first">
+                    <div><a href="#JSfile">JavaScript Main Rules </a></div>
+                    <ul>
+                        <li class="second">
+                            <a href="#console-log">console.log()</a>
+                        </li>
+                        <li>
+                            <a href="#comments">comments</a>
+                            <ul>
+                                <li>
+                                    <a href="#">╚> </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="first">
+                    <div><a href="#js+html">JavaScript + HTML </a></div>
+                    <ul>
+                        <li class="second">
+                            <a href="#script-tag">script - tag</a>
+                            <ul>
+                                <li>
+                                    <a href="#defer">╚> defer - attribute</a>
+                                </li>
+                                <li>
+                                    <a href="#async">╚> async - attribute</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#DOM">DOM</a>
+                            <ul>
+                                <li>
+                                    <a href="#innerHTML">innerHTML </a>
+                                </li>
+                                <li>
+                                    <a href="#querySelector">querySelector </a>
+                                </li>
+                                <li>
+                                    <a href="#idSelector">getElementById </a>
+                                </li>
+                                 <li>
+                                    <a href="#style">.style </a>
+                                </li>
+                                <li>
+                                    <a href="#create-element">.createElement </a>
+                                </li>
+                                <li>
+                                    <a href="#append-child">.appendChild </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </nav>
+
+    <!-- END Internal Navigation Bar -->
+
+    <!-- START main page part -->
+
+    <main>
+        <article>
+
+            <!-- START Basic part -->
+            
+            <section>
+                <header id="JSfile">
+                <h2> In the
+                    <span class="light-green">script.js</span> 
+                    file
+                </h2>
+                </header>
+
+                <!-- START console.log -->
+
+                <div id='console-log'>
+                    <h3>console.log()</h3>
+                    <p>
+                        Show what's within the brackets in the terminal.
+                    </p>
+                    <code>
+                        console.log('Hi!'); <span class="dark-green">// display -> Hi!</span>
+                    </code>
+                </div>
+
+                <!-- END console.log -->
+
+                <!-- START comments -->
+
+                <div id='comments'>
+                    <h3>// and /* */</h3>
+                    <p>
+                        They are used to describe what a piece of code is for, useful both for us and for other programmers, a single comment line is made with <span class="middle-blue-2">//</span>, instead more lines of comment are made with <span class="middle-blue-2">/* comments */</span>, you can also put a comment in the middle of an instruction like this :
+                    </p>
+                    <code>
+                        console.log (<span class="dark-green">/* comment */</span> 18); <span class="dark-green">// display -> 18</span>
+                    </code>
+                </div>
+
+                <!-- END comments -->
+
+            </section>
+
+            <!-- END Basic part -->
+
+            <!-- START JS + HTML -->
+
+            <section>
+
+                <header id="js+html">
+                    <h2>  
+                        <span class="light-green">JavaScript</span> 
+                        +
+                        <span class="light-green">HTML</span>
+                    </h2>
+                </header>
+
+                <!-- START script tag -->
+
+                    <div id='script-tag'>
+                        <h3>&lt; script &gt;</h3>
+                        <p>
+                            Script tags allow you to insert JS code into our html.file exactly like &lt;style&gt; does for css.
+                        </p>
+                        <br>
+                        <p>
+                            Obviously it is better to write the JS code in an external file, thas is then integrated in html with :
+                        </p>
+                        <code>
+                            &lt;script src="path" type="text/javascript"&gt; &lt;/script&gt;
+                        </code>
+                        <br />
+                        <p>When we insert a script in the html file, based on where we insert it the page will stop loading to load the script, once the script is loaded, the page will resume loading, if we put the script at the bottom of the page, it will load first the page and then the scripts, if we put the script in the middle of page, the first half of the page will be loaded up to the script, then the script will be loaded and once loaded, the page will resume its loading.</p>
+                    </div>
+
+                    <!-- END script tag -->
+
+                    <!-- START defer attribute -->
+
+                    <div id='defer'>
+                        <h3 class="original-middle-blue">╚> defer</h3>
+                        <p>
+                           Specifies that the script is loaded only after the entire page has loaded.
+                        </p>
+                        <code class="dark-green">
+                            &lt;script src="path" type="text/javascript" <span class="original-middle-blue"> defer </span>&gt; &lt;/script&gt;
+                        </code>
+                    </div>
+
+                    <!-- END defer attribute -->
+
+                    <!-- START defer attribute -->
+
+                    <div id='async'>
+                        <h3 class="original-middle-blue">╚> async</h3>
+                        <p>
+                           Attribute that allows you to load the scripts in the meantime that the html page is also loading (load the script in the background) without stopping anything, the script will be executed once downloaded no matter if the page has already loaded or not.
+                        </p>
+                        <code class="dark-green">
+                            &lt;script src="path" type="text/javascript" <span class="original-middle-blue"> async </span>&gt; &lt;/script&gt;
+                        </code>
+                    </div>
+
+                    <!-- END defer attribute -->
+    
+            </section>
+
+            <!-- END JS + HTML -->
+
+            <!-- START DOM -->
+            <section>
+                <header id="DOM">
+                    <h2>  The 
+                        <span class="light-green">DOM</span> 
+                    </h2>
+                </header>
+
+                <!-- START document -->
+
+                    <div id='document'>
+                        <h3>document</h3>
+                        <p>
+                           The door to access the DOM, before changing any html element you have to select it via document.
+                        </p>
+                        <code>
+                            document.
+                        </code>
+                    </div>
+
+                    <!-- END document -->
+
+                    <!-- START innerHTML -->
+
+                    <div id='innerHTML'>
+                        <h3>document.tag.innerHTML = " - "</h3>
+                        <p>
+                           It allows you to access the contents of a tag and set it like this:
+                        </p>
+                        <code>
+                            document.body.innerHTML = "&lt;h1&gt; Hello World! &lt;/h1&gt;"<br>
+                            <span class="dark-green">//In this way we can access the body tag, delete everything inside it and replace it with the header which contains "Hello World!"
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END innerHTML -->
+
+                    <!-- START querySelector -->
+
+                    <div id='querySelector'>
+                        <h3>document.querySelector(' - ')</h3>
+                        <p>
+                           Allows you to select more specific elements through CSS selectors and returns the first matching element found in the DOM, you can select tags, .classes and #id.
+                        </p>
+                        <code>
+                            document.querySelector('p');<br>
+                            <span class="dark-green">//Select the first &lt;p&gt; it finds
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END querySelector -->
+
+
+                    <!-- START idSelector -->
+
+                    <div id='idSelector'>
+                        <h3>document.getElementById(' - ')</h3>
+                        <p>
+                           It is used to select a certain id.
+                        </p>
+                        <code>
+                            document.getElementById('someId');<br>
+                            <span class="dark-green">//Find the element with this id and select it
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END idSelector -->
+
+                    <!-- START .style -->
+
+                    <div id='style'>
+                        <h3>.style.property = 'attribute'</h3>
+                        <p>
+                           It is used to change the style of an element, first you select the element, then you add .style, then you decide which style to change, for example .fontSize and finally you assign the value = "12px".
+                        </p>
+                        <code>
+                            document.querySelector('p').style.color = "#fff";<br />
+                            <span class="dark-green">//In this case we select the first &lt;p&gt; we find on the page and change its color.
+                                <br /><br />
+                                //Or
+                                <br />
+                                </span>
+                        <br >
+                        let firstP = document.querySelector('p');<br />
+                        firstP.style.color = red;<br />
+                        <span class="dark-green">//In this case we assign to a variable the selection of &lt;p&gt;, and then through the variable we change its style.
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END .style -->
+
+                    <!-- START .createElement -->
+
+                    <div id='create-element'>
+                        <h3>.createElement = 'tag'</h3>
+                        <p>
+                           It creates an element based on the specified tag, but this does not appear in the document because it is empty and with no innerHTML, furthermore to show it on the page it is necessary to append it to another element.
+                        </p>
+                        <code>
+                        let newP = document.createElement = 'p';<br />
+                        <span class="dark-green">//A new element has just been created!
+                                </span>
+                        </code>
+                    </div>
+
+                    <!-- END .createElement -->
+
+                    <!-- START .createElement -->
+
+                    <div id='append-child'>
+                        <h3>.appendChild()</h3>
+                        <p>
+                           It is used to add the element created to the page, assigning it as a child to an html element that already exists (it will be assigned as the last child of that element).
+                        </p>
+                        <code>
+                        let newP = document.createElement = 'p';<br />
+                        <span class="dark-green">
+                            //Create the element<br/>
+                        </span>
+                        <br />
+                        newP.id="info";<br />
+                        <span class="dark-green">
+                            //Assign it an id<br/>
+                        </span>
+                        <br />
+                        newP.innerHTML = 'The text inside the paragraph';<br />
+                        <span class="dark-green">
+                            //Add some text to it<br/>
+                        </span>
+                        <br />
+                        document.body.appendChild(newP);<br />
+                        <span class="dark-green">
+                            //And finally add it to the body as its last element<br/>
+                        </span>
+                        </code>
+                    </div>
+
+                    <!-- END .createElement -->
+                
+                
+            </section>
+
+            <!-- END DOM --> 
+
+        </article>
+
+        <div class='go-top'>
+            <a href="#go-top" title='Return to the top of the page.'>↑</a>
+        </div>
+
+    </main>
+
+    <!-- END main page part -->
+
+
+    <!-- Footer -->
+
+    <footer>
+        <h6 class="dark-green">alfa 1.1.0.3 - 
+            ©2020 
+            <span> MdN </span>
+            <span class="light-green">DATA</span>
+            <span class="light-blue">SOFTWARE</span>
+            . All rights reserved.
+        </h6>
+    </footer>
+</body>
+</html>
