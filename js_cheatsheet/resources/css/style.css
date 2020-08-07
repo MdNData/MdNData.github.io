@@ -194,7 +194,7 @@ div.header-spaced {
 
 nav.content-map {
     position: fixed;
-    width: 24%;
+    width: 20%;
     overflow: scroll;
     height: 93vh;
     background-color: #fff;
@@ -202,10 +202,11 @@ nav.content-map {
 
 nav.content-map {
     position: fixed;
-    width: 24%;
+    max-width: 20%;     
+    width: auto;
     overflow: scroll;
     height: 93vh;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.6);
 }
 
 nav.content-map {
@@ -229,6 +230,7 @@ nav.content-map::-webkit-scrollbar-thumb {
     padding: 0.5vw;
     color: #246c8c;
     text-align: center;
+    padding: 1.5vw 0 1vw 0;
 }
 
 .content-map ul, .content-map ol {
@@ -281,7 +283,7 @@ main section {
 }
 
 main section header {
-    padding: 2vw 0;
+    padding-top: 5vw;
     font-size: 2vw;
 }
 
