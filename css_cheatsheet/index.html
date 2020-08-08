@@ -96,12 +96,18 @@
             <header class="dark-green">
                 <h2 class="work-sans" title='Content Map'>Content Map  </h2>
             </header>
-             <ol class='work-sans' title='Go to ...'>
+             <ol id="hide-this" class='work-sans' title='Go to ...'>
                 <li class="first">
-                    <span title="open/close">Style Element</span>
-                    <ul>
+                    <span title="open/close">Define Style</span>
+                    <ul hidden>
                         <li class="second">
                             <a href="#inline-style">style = " - "</a>
+                        </li>
+                        <li class="second">
+                            <a href="#style-tag">style - tag</a>
+                        </li>
+                        <li class="second">
+                            <a href="#style-css">style - file</a>
                         </li>
                         <li>
                             <a href="#"></a>
@@ -135,7 +141,7 @@
                 </h2>
                 </header>
 
-                <!-- START console.log -->
+                <!-- START inline-style -->
 
                 <div id='inline-style'>
                     <h3>style = " - "</h3>
@@ -147,7 +153,39 @@
                     </code>
                 </div>
 
-                <!-- END console.log -->
+                <!-- END inline-style -->
+
+                <!-- START style tag -->
+
+                <div id='style-tag'>
+                    <h3>&lt; style &gt;</h3>
+                    <p>
+                        Another way to insert styles inside the html file is to create a &lt;style&gt; tag inside the &lt;head&gt; tag of the body.
+                    </p>
+                    <code>
+                        &lt;style&gt;<br/> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;p { <br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br/>
+                            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                        &lt;/style&gt;
+                    </code>
+                </div>
+
+                <!-- END style tag -->
+
+                <!-- START style file -->
+
+                <div id='style-css'>
+                    <h3>style.css</h3>
+                    <p>
+                        The last and also the best way to insert style is to write it in an external style.css file and insert it in the head of the html file.
+                    </p>
+                    <code>
+                        &lt;link href="path/style.css" rel="stylesheet" type="text/css"&gt;
+                    </code>
+                </div>
+
+                <!-- END style file -->
 
                 </section>
             </header>
@@ -168,7 +206,7 @@
     <!-- Footer -->
 
     <footer>
-        <h6 class="dark-green">alfa 1.0.0.0 - 
+        <h6 class="dark-green">alfa 1.0.0.2 - 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>

@@ -115,6 +115,9 @@
                             <span title="open/close"> script - tag</span>
                             <ul hidden>
                                 <li>
+                                    <a href="#script-tag">script - tag</a>
+                                </li>
+                                <li>
                                     <a href="#defer">╚> defer - attribute</a>
                                 </li>
                                 <li>
@@ -125,6 +128,9 @@
                         <li>
                             <span  title="open/close">DOM & events</span>
                             <ul hidden>
+                                <li>
+                                    <a href="#document">document </a>
+                                </li>
                                 <li>
                                     <a href="#innerHTML">innerHTML </a>
                                 </li>
@@ -239,7 +245,7 @@
                             Obviously it is better to write the JS code in an external file, thas is then integrated in html with :
                         </p>
                         <code>
-                            &lt;script src="path" type="text/javascript"&gt; &lt;/script&gt;
+                            &lt;script src="path/script.js" type="text/javascript"&gt; &lt;/script&gt;
                         </code>
                         <br />
                         <p>When we insert a script in the html file, based on where we insert it the page will stop loading to load the script, once the script is loaded, the page will resume loading, if we put the script at the bottom of the page, it will load first the page and then the scripts, if we put the script in the middle of page, the first half of the page will be loaded up to the script, then the script will be loaded and once loaded, the page will resume its loading.</p>
@@ -497,7 +503,9 @@
                             element.addEventListener('click', turnButtonRed);<br />
                             <span class="dark-green">// create the event and wait for it to happen
                             </span>
-                            <pre><br /><br/>
+                            <pre><br />
+-----------------------------------------------------------------------------------------------
+                                <br/>
 <span class="dark-green">
 //Hide/Show the content map elements
 //We select the element with id "hide-this", that is the parent of the elements that we need
@@ -571,7 +579,7 @@ hiding.addEventListener('click', hideElement);
     <!-- Footer -->
 
     <footer>
-        <h6 class="dark-green">alfa 1.1.0.3 - 
+        <h6 class="dark-green">alfa 1.1.1.4 - 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>
