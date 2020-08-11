@@ -86,7 +86,7 @@ header.navigation section h1{
     margin-left: 5vw;
 }
 
-header.navigation section h1 span:hover {
+#surprize:hover {
     transform: scale(1.2);
     transition: 1s;
     margin-left: 1.5vw;
