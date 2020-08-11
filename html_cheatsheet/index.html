@@ -268,6 +268,9 @@
                                 <li>
                                     <a href="#audio-tag">audio - tag </a>
                                 </li>
+                                <li>
+                                    <a href="#embed-tag">embed - tag </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -281,6 +284,14 @@
                                 </li>
                                 <li>
                                     <a href="#li-tag"> li -tag </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span> input </span>
+                            <ul hidden>
+                                <li>
+                                    <a href="#itext"> text </a>
                                 </li>
                             </ul>
                         </li>
@@ -873,6 +884,25 @@
                     </div>
 
                     <!-- END audio tag -->
+
+                    <!-- START audio tag -->
+
+                     <div id='embed-tag'>
+                        <h3>
+                            &lt; embed  
+                            <span class="middle-blue-2">src="path"</span>
+                            /&gt; 
+                        </h3>
+                        <p>
+                           Embed is a more general tag for media, it can be used for both video and audio and also for gifs, but the use of specific tags rather than embed is recommended.
+                        </p>
+                        <code>
+                            &lt; embed source src="audio.mp3" type="audio/mpeg" &gt
+                        </code>
+                    </div>
+
+                    <!-- END audio tag -->
+
                 </article>
 
                 <!-- END Media tag -->
@@ -923,6 +953,29 @@
                 </article>
 
                 <!-- END lists -->
+
+                <!-- START input -->
+
+                <article>
+                    
+                    <!-- START input text tag -->
+
+                    <div id='itext'>
+                        <h3>
+                            &lt; input <span class="middle-blue-2">type="text"</span> placeholder=" - " name=" - " &gt; 
+                        </h3>
+                        <p>
+                           Useful when you need a user to enter generic text.<br />
+                           <span class="middle-blue-2">placeholder = " - " </span> displays a light gray text in the input, useful for telling the user what to write, but as the user enters text it disappears.<br />
+                           <span class="middle-blue-2">name = " - " </span> each input needs it otherwise the data will not be sent through the form, thanks to it in fact when we send the form the data entered by the user is sent named by this variable.
+                        </p>  
+                    </div>
+
+                    <!-- END input text tag -->
+
+                </article>
+
+                <!-- END input -->
 
             </section>
         </article>
