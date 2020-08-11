@@ -251,6 +251,12 @@
                                 <li>
                                     <a href="#img-tag">img - tag </a>
                                 </li>
+                                <li>
+                                    <a href="#video-tag">video - tag </a>
+                                </li>
+                                <li>
+                                    <a href="#audio-tag">audio - tag </a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -794,6 +800,48 @@
                     </div>
 
                     <!-- END img tag -->
+
+                    <!-- START video tag -->
+
+                    <div id='video-tag'>
+                        <h3>
+                            &lt; video  
+                            <span class="middle-blue-2">src="path" width="" height="" controls autoplay loop</span>
+                            /&gt; 
+                        </h3>
+                        <p>
+                            To insert video as for images use <span class='middle-blue-2'>src</span>, then it needs a <span class='middle-blue-2'>width = "-"</span> for how wide you want it to appear and <span class='middle-blue-2'>height = '-'</span> for how high, <span class='middle-blue-2'>controls</span> is for inserting pause, play and skip, <span class='middle-blue-2'>autoplay</span> keys to start the video automatically and <span class='middle-blue-2'>loop</span> to repeat the video endlessly.<br/>
+                            The video tag needs both the opening and closing tags.
+                        </p>
+                        <code>
+                            &lt; video src="path" width="300px" height="300px" controls autoplay loop &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;This text is displayed if the video is not working properly.<br />
+                            &lt; video &gt;
+                        </code>
+                    </div>
+
+                    <!-- END video tag -->
+
+                    <!-- START audio tag -->
+
+                     <div id='audio-tag'>
+                        <h3>
+                            &lt; audio  
+                            <span class="middle-blue-2">src="path" type="audio/mp3" controls autoplay loop</span>
+                            /&gt; 
+                        </h3>
+                        <p>
+                            It is used to insert audio, has an "audio" tag and a "source" search tag inside it with src='' type='audio/mp3'<br/>
+                            Audio also has attributes like controls and autoplay.
+                        </p>
+                        <code>
+                            &lt; audio controls autoplay &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt; source src="audio.mp3" type="audio/mp3" &gt;<br />
+                            &lt;/audio&gt;
+                        </code>
+                    </div>
+
+                    <!-- END audio tag -->
                 </article>
 
                 <!-- END Media tag -->
