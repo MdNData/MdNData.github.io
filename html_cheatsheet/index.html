@@ -29,7 +29,8 @@
 </head>
 
 <body class="dark-blue">
-
+<div class="pre_i">
+</div>
     <!-- START Title -->
 
      <header class='navigation'>
@@ -60,13 +61,16 @@
                         <a href="#" title='Find some tutorials and guides made by us.'>Resources</a>
                         <ul>
                             <li>
-                                <a href="#" title="HTML - CheatSheet">HTML</a>
+                                
+                                <a href="#" title="HTML - CheatSheet"><img src="resources/images/html5_s.png">HTML</a>
                             </li>
                             <li>
-                                <a href="../css_cheatsheet/index.html" title="CSS - CheatSheet">CSS</a>
+                               
+                                <a href="../css_cheatsheet/index.html" title="CSS - CheatSheet"><img src="resources/images/css3_s.png">CSS</a>
                             </li>
                             <li>
-                                <a href="../js_cheatsheet/index.html" title="JS - CheatSheet">JS</a>
+
+                                <a href="../js_cheatsheet/index.html" title="JavaScript - CheatSheet"><img src="resources/images/js_s.png">JS</a>
                             </li>
                         </ul>
                     </li>
@@ -90,7 +94,8 @@
 
     <!-- START Internal Navigation bar -->
 
-    <nav class='content-map'>
+    <aside class='content-map'>
+        <nav>
         <section>
 
             <header class="dark-green">
@@ -181,6 +186,12 @@
                                 </li>
                                 <li>
                                     <a href="#footer-tag"> ╚> footer - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#details-tag"> ╚> details - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#time-tag"> ╚> time - tag</a>
                                 </li>
                             </ul>
                         </li>
@@ -278,6 +289,7 @@
             </ol>
         </section>
     </nav>
+    </aside>
 
     <hr>
 
@@ -553,7 +565,7 @@
 
                     <div id='aside-tag'>
                         <h4 class='middle-blue-2'>╚> &lt; aside &gt;</h4>
-                        <p>They are used to group additional information such as: bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars.</p>
+                        <p>They are used to group additional information such as: bibliographies, Endnotes, Comments, Pull quotes, Editorial sidebars, list of links.</p>
                     </div>
 
                     <!-- END aside tag -->
@@ -572,10 +584,28 @@
 
                     <div id='footer-tag'>
                         <h4 class='middle-blue-2'>╚> &lt; footer &gt;</h4>
-                        <p>It is used to enter final information such as email, site map, phone number etc.</p>
+                        <p>It is used to contain final information such as email, site map, phone number etc.</p>
                     </div>
 
                     <!-- END footer - tag --> 
+
+                    <!-- START details - tag --> 
+
+                    <div id='details-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; details &gt;</h4>
+                        <p>It is used to contain copyright elements.</p>
+                    </div>
+
+                    <!-- END details - tag --> 
+
+                    <!-- START time - tag --> 
+
+                    <div id='time-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; time &gt;</h4>
+                        <p>It works as a "span" but a time must be placed inside it, like the duration of a film.</p>
+                    </div>
+
+                    <!-- END time - tag --> 
 
 
                 </article>
@@ -810,12 +840,14 @@
                             /&gt; 
                         </h3>
                         <p>
-                            To insert video as for images use <span class='middle-blue-2'>src</span>, then it needs a <span class='middle-blue-2'>width = "-"</span> for how wide you want it to appear and <span class='middle-blue-2'>height = '-'</span> for how high, <span class='middle-blue-2'>controls</span> is for inserting pause, play and skip, <span class='middle-blue-2'>autoplay</span> keys to start the video automatically and <span class='middle-blue-2'>loop</span> to repeat the video endlessly.<br/>
+                           It is used to insert video, has an "video" tag and a "source" search tag inside it with <span class='middle-blue-2'>src=' - ' type='video/mp4' poster="image.png"</span> attribues. <br>
+                           Inside the video tag you can use a <span class='middle-blue-2'>width = "-"</span> for how wide you want it to appear and <span class='middle-blue-2'>height = '-'</span> for how high, <span class='middle-blue-2'>controls</span> is for insert pause, play and skip, <span class='middle-blue-2'>autoplay</span> to start the video automatically but it doesn't work often, <span class='middle-blue-2'>loop</span> to repeat the video endlessly, <span class='middle-blue-2'>muted </span>to disable its sound and <span class='middle-blue-2'>poster</span> that is used to display an initial image before the video starts.<br/>
                             The video tag needs both the opening and closing tags.
                         </p>
                         <code>
-                            &lt; video src="path" width="300px" height="300px" controls autoplay loop &gt;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;This text is displayed if the video is not working properly.<br />
+                            &lt; video width="300px" height="300px" controls autoplay loop poster="image.png"&gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt; source src="video.mp4" type="video/mp4" &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;this text is displayed if the video is not working properly.&lt;/p&gt;<br />
                             &lt; video &gt;
                         </code>
                     </div>
@@ -827,16 +859,15 @@
                      <div id='audio-tag'>
                         <h3>
                             &lt; audio  
-                            <span class="middle-blue-2">src="path" type="audio/mp3" controls autoplay loop</span>
+                            <span class="middle-blue-2">src="path" type="audio/mpeg" controls autoplay loop</span>
                             /&gt; 
                         </h3>
                         <p>
-                            It is used to insert audio, has an "audio" tag and a "source" search tag inside it with src='' type='audio/mp3'<br/>
-                            Audio also has attributes like controls and autoplay.
+                            It works exactly the same as video, but with audio.
                         </p>
                         <code>
                             &lt; audio controls autoplay &gt;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;&lt; source src="audio.mp3" type="audio/mp3" &gt;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt; source src="audio.mp3" type="audio/mpeg" &gt;<br />
                             &lt;/audio&gt;
                         </code>
                     </div>

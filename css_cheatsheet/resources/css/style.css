@@ -107,6 +107,13 @@ header section nav ul li {
 }
 
 
+header section nav ul a img {
+    max-width: 100%;
+    height: 1.5vw;
+    margin: 0.5vw;
+}
+
+
 header section nav ul a {
     text-decoration: none;
     color: #1c2d49;
@@ -114,13 +121,16 @@ header section nav ul a {
     text-transform: uppercase;
     font-size: 1vw;
     transition: 0.3s;
-    display: block;
-    margin: auto auto;
+    display: inline-flex;
     opacity: 0.85;
+    align-items: center;
+    justify-content: center;
 }
+
 
 header section nav ul li:hover a{
     color: #31e8e8;
+    transform: scale(1.1);
 }
 
 header section nav ul li:hover ul li a{
@@ -169,7 +179,7 @@ div.header-spaced {
 
 /* CONTENT MAP */
 
-nav.content-map {
+aside.content-map {
     position: fixed;
     width: auto;
     max-width: 20%;
@@ -178,17 +188,17 @@ nav.content-map {
     background-color: rgba(255,255,255,0.6);
 }
 
-nav.content-map {
+aside.content-map {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
-nav.content-map::-webkit-scrollbar {
+aside.content-map::-webkit-scrollbar {
   width: 11px;
 }
-nav.content-map::-webkit-scrollbar-track {
+aside.content-map::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
-nav.content-map::-webkit-scrollbar-thumb {
+aside.content-map::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG) ;
   border-radius: 6px;
   border: 3px solid var(--scrollbarBG);
