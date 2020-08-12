@@ -22,6 +22,8 @@
     <title> 
         HTML | CheatSheet
     </title>
+    <link href="../resources/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../resources/css/cheatsheet_style.css" rel="stylesheet" type="text/css">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
@@ -179,6 +181,9 @@
                                     <a href="#article-tag"> ╚> article - tag</a>
                                 </li>
                                 <li>
+                                    <a href="#div-tag"> ╚> div - tag</a>
+                                </li>
+                                <li>
                                     <a href="#aside-tag"> ╚> aside - tag</a>
                                 </li>
                                 <li>
@@ -192,6 +197,12 @@
                                 </li>
                                 <li>
                                     <a href="#time-tag"> ╚> time - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#fieldset-tag"> ╚> fieldset - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#legend-tag"> ╚> legend - tag</a>
                                 </li>
                             </ul>
                         </li>
@@ -250,6 +261,12 @@
                                 </li>
                                 <li>
                                     <a href="#id-attr">id - attribute</a>
+                                </li>
+                                <li>
+                                    <a href="#accesskey-attr">accesskey - attribute</a>
+                                </li>
+                                <li>
+                                    <a href="#tindex-attr">tindex - attribute</a>
                                 </li>
                             </ul>
                         </li>
@@ -572,6 +589,15 @@
 
                     <!-- END article tag -->
 
+                    <!-- START div tag -->
+
+                    <div id='div-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; div &gt;</h4>
+                        <p>Groups content, but less specifically than section and article.</p>
+                    </div>
+
+                    <!-- END div tag -->
+
                     <!-- START aside tag -->
 
                     <div id='aside-tag'>
@@ -612,11 +638,30 @@
                     <!-- START time - tag --> 
 
                     <div id='time-tag'>
-                        <h4 class='middle-blue-2'>╚> &lt; time &gt;</h4>
+                        <h4 class='middle-blue-2'>╚> &lt; time datetime="12-08-2020"&gt;</h4>
                         <p>It works as a "span" but a time must be placed inside it, like the duration of a film.</p>
+                        <p>It also has an attribute <span class='dark-green'>datetime</span> to insert precisely the date we are referring to.</p>
                     </div>
 
                     <!-- END time - tag --> 
+
+                    <!-- START fieldset - tag --> 
+
+                    <div id='fieldset-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; fieldset &gt;</h4>
+                        <p>Useful to group several buttons that are used for the same thing, such as radio buttons.</p>
+                    </div>
+
+                    <!-- END fieldset - tag --> 
+
+                    <!-- START legend - tag --> 
+
+                    <div id='legend-tag'>
+                        <h4 class='middle-blue-2'>╚> &lt; legend &gt;</h4>
+                        <p>It is inserted inside the fieldset, and gives a description to the buttons contained in it.</p>
+                    </div>
+
+                    <!-- END legend - tag -->
 
 
                 </article>
@@ -793,7 +838,32 @@
 
                     <!-- END id attribute -->
 
+                    <!-- START accesskey attribute -->
 
+                    <div id='accesskey-attr'>
+                        <h3 class='middle-blue-2'>
+                            accesskey = ' b '
+                        </h3>
+                        <p>
+                            It is used as a shortcut, so if the user presses the key with the letter we specify, he will be directly taken to the tag that has that letter as "accesskey";
+                        </p>
+                    </div>
+
+                    <!-- END accesskey attribute -->
+
+                    <!-- START tabindex attribute -->
+
+                    <div id='tindex-attr'>
+                        <h3 class='middle-blue-2'>
+                            tabindex = ' - '
+                        </h3>
+                        <p>
+                            It allows us to modify the tab setting, to choose whether an element can be reached via tab or not.
+                        </p>
+                        <p>It can have numerical values: 0 that makes it reachable with tab, -1 instead not, we can also make elements reach in a certain order with 1-2-3-n.</p>
+                    </div>
+
+                    <!-- END tabindex attribute -->
 
 
                 </article>
