@@ -243,10 +243,11 @@ code {
     right: 2vw;
     bottom: 3vw;
     width: 2vw;
-    height: auto;
+    height: 2.5vw;
     background-color: #33c3ea;
     box-shadow: 0 0 20px rgba(0,0,0,0.19), 0 0px 6px rgba(0,0,0,0.23);
     border-radius: 0.8vw;
+    text-align: center;
 }
 
 .go-top:hover {
@@ -254,7 +255,8 @@ code {
 }
 
 .go-top a {
-    font-size: 2.5vw;
+    font-size: 2vw;
+    margin: auto;
 }
 
 footer {
