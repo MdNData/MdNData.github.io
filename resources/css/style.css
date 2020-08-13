@@ -4,9 +4,6 @@ header.navigation {
     width: 100%;
     position: fixed;
     z-index:99;
-    -moz-box-shadow:    0 2px 3px rgba(175, 175, 175, 0.5);
-    -webkit-box-shadow: 0 2px 3px rgba(175, 175, 175, 0.5);
-    box-shadow:         0 2px 3px rgba(175, 175, 175, 0.5);
 }
 
 header.navigation section{
@@ -14,7 +11,7 @@ header.navigation section{
     width: 100%;
     height: 4vw;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.2);
 }
 
 header section .logo_a {
@@ -23,9 +20,8 @@ header section .logo_a {
     justify-content: center;
     align-items: center;
     margin-left: 5vw;
-    background-color: rgba(255,255,255,0.4);
     border-radius: 5vw;
-    width: 17vw;
+    width: auto;
     height: 3vw;
     margin: auto;
 }
@@ -71,28 +67,27 @@ header section nav ul a img {
 
 header section nav ul a {
     text-decoration: none;
-    color: #31e8e8;
+    color: hsl(180, 80%, 95%);
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1vw;
     transition: 0.3s;
     display: inline-flex;
-    opacity: 0.85;
     align-items: center;
     justify-content: center;
 }
 
 
 header section nav ul li:hover a{
-    color: #33ea9b;
+    color: #31e8e8;
     transform: scale(1.1);
 }
 
 header section nav ul li:hover ul li a{
-    color: #31e8e8;
+    color: hsl(180, 80%, 95%);
 }
 header section nav ul li ul li a:hover{
-    color: #33ea9b;
+    color: #31e8e8;
 }
 
 header section nav ul li ul {
@@ -113,8 +108,8 @@ li.resources:hover ul {
     border-bottom-right-radius: 1vw;
     border-bottom-left-radius: 1vw;
     z-index: 98;
-    box-shadow:         0 3px 3px rgba(175, 175, 175, 0.5);
-    background-color: rgba(0,0,0,0.8);
+    box-shadow:         0 3px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.2);
 }
 
 li.resources:hover ul li {
@@ -130,16 +125,21 @@ div.header-spaced {
 }
 
 .welcome section {
-    padding-left: 20%;
-    padding-right: 20%; 
+    padding-left: 25%;
+    padding-right: 25%; 
     padding-top: 8vw;
     line-height: 4vw;
 }
 
-section.img-landing {
-    background-image: url("../images/landing-img3.jpg");
+.img-landing {
+    background-image: url("../images/landing-img2.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
+}
+
+.img-landing section {
+    height: 80vh;
+    background-color: rgba(0,0,0,0.3);
 }
 
 section.img-landing * {
@@ -149,12 +149,11 @@ section.img-landing * {
 h2.main {
     position: relative;
     text-align: center;
-    font-size: 2.7vw;
-    margin-top: 1vw;
+    font-size: 2.8vw;
     z-index: 97;
-    color: white;
-    -webkit-text-stroke: 0.1px #1c2d49;
-    -moz-text-stroke: 0.1px #1c2d49;
+    color: transparent;
+    -webkit-text-stroke: 1.5px white;
+    text-transform: uppercase;
 }
 
 footer {
