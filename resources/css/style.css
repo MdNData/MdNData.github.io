@@ -154,6 +154,12 @@ h2.main{
 
 footer {
     text-align: center;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 1.3vw;
+}
+
+footer h6 {
+    padding: 3vw 0;
 }
 
 /* FONTS */
