@@ -129,8 +129,9 @@ div.header-spaced {
 .welcome section {
     padding-left: 25%;
     padding-right: 25%; 
-    padding-top: 8vw;
+    padding-top: 12vw;
     line-height: 4vw;
+    text-align: center;
 }
 
 .img-landing {
@@ -145,11 +146,26 @@ div.header-spaced {
 }
 
 h2.main{
-    position: relative;
-    text-align: center;
     font-size: 3.3vw;
     z-index: 97;
     color: white;
+    margin-bottom: 3vw;
+}
+
+.welcome a {
+    text-decoration: none;
+    background-color: #31e8e8;
+    padding: 0.8vw;
+    color: #246c8c;
+    border-radius: 2vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 1.2vw;
+}
+
+.welcome a:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1) inset;
+    text-shadow: none;
 }
 
 footer {
