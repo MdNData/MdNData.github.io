@@ -142,14 +142,10 @@ div.header-spaced {
     background-color: rgba(0,0,0,0.3);
 }
 
-section.img-landing * {
-    font-family: Audiowide, cursive;
-}
-
-h2.main {
+h2.main{
     position: relative;
     text-align: center;
-    font-size: 2.8vw;
+    font-size: 3.05vw;
     z-index: 97;
     color: transparent;
     -webkit-text-stroke: 1.5px white;
