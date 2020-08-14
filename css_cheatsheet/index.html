@@ -141,9 +141,15 @@
                                     <a href="#ID-sel">ID</a>
                                 </li>
                                 <li>
+                                    <a href="#imp-sel">!important</a>
+                                </li>
+                                <li>
                                     <a href="#root-sel">:root</a>
                                 </li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="#vars"> CSS Variables </a>
                         </li>
                     </ul>
                 </li>
@@ -362,6 +368,24 @@
 
                         <!-- END ID selection -->
 
+                        <!-- START !important -->
+
+                            <div id="imp-sel">
+                                <h3>!important</h3>
+                                <p>
+                                    If we want at all costs that our element is not modified by other selectors, we can add !important at the end of the CSS style we want to apply.
+                                </p>
+                                <code>
+                                    div {<br/>
+                                    color: red !important;<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//The divs will always have the text color red!</span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END !important -->
+
                         <!-- START :root selection -->
 
                             <div id="root-sel">
@@ -382,6 +406,34 @@
                     </article>
 
                     <!-- END CSS selection -->
+
+                    <!-- START create a css variable -->
+
+                    <article>
+
+                        <div id="vars">
+                            <h3>--name : value;</h3>
+                            <p>
+                                By creating a CSS variable, we can reuse it anywhere in the code, so if we need to change its value just change it in the variable.<br/>
+                                Without variables we would have to look in the code for all the places where we have to change the same value over and over again, wasting a lot of time.<br />
+                                Variables are usually declared inside the selector  :root {} in order to have them globally accessible.
+                            </p>
+                            <code>
+                                 <span class="light-green">//declare the variable</span><br/>
+                                 :root {<br/>
+                                 &nbsp;&nbsp;&nbsp;&nbsp;   --red-color : red;<br/>
+                                 }<br/><br/>
+                                 <span class="light-green">//use it and also add an emergency value if the variable is not available</span><br/>
+                                 p {<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;   color: var(--red-color, red);<br/>
+                                    }
+
+                            </code>
+                        </div>
+                        
+                    </article>
+
+                    <!-- END create a css variable -->
 
                 </section>
             </header>
