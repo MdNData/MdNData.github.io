@@ -126,6 +126,18 @@
                                     <a href="#class-sel">class</a>
                                 </li>
                                 <li>
+                                    <a href="#spec-sel">specific</a>
+                                </li>
+                                <li>
+                                    <a href="#acc-sel">accurate</a>
+                                </li>
+                                <li>
+                                    <a href="#adj-sel">adjacent</a>
+                                </li>
+                                <li>
+                                    <a href="#av-sel">[type='radio']</a>
+                                </li>
+                                <li>
                                     <a href="#ID-sel">ID</a>
                                 </li>
                                 <li>
@@ -228,6 +240,9 @@
                                 <code>
                                     p {<br/>
                                     <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the p tags</span><br/>
+                                    }<br/><br/>
+                                    p, div {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the p and div tags</span><br/>
                                     }
                                 </code>
                                 
@@ -253,6 +268,80 @@
                             </div>
 
                         <!-- END class selection -->
+
+                        <!-- START specific selection -->
+
+                            <div id="spec-sel">
+                                <h3>tag.class</h3>
+                                <p>
+                                    We can also select only certain elements that have a certain class.
+                                </p>
+                                <code>
+                                    div.className {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select only divs with className </span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END specific selection -->
+
+                        <!-- START more accurate selection -->
+
+                            <div id="acc-sel">
+                                <h3>accurate selection</h3>
+                                <p>
+                                    We can make the selection more accurate by simply adding more selectors one after the other, if we want to select only the p's that are inside the divs we can do:
+                                </p>
+                                <code>
+                                    div p {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the p's in divs, works with tags, classes and ids</span><br/>
+                                    }
+                                </code><br/>
+                                <p>It also works with the > symbol</p>
+                                <code>
+                                    div > p {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the p's in divs</span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END more accurate selection -->
+
+                        <!-- START adiacent selection -->
+
+                            <div id="adj-sel">
+                                <h3>adjacent selection</h3>
+                                <p>
+                                    To select only the element after a certain element:
+                                </p>
+                                <code>
+                                    form label + input  {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//it will select only the first input that it finds after label inside the form, if the element after label is not an input it will not select anything. </span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END adiacent selection -->
+
+                        <!-- START [attribute=value] selection -->
+
+                            <div id="av-sel">
+                                <h3>[attribute=value]</h3>
+                                <p>
+                                    Select only the elements that have that attribute with that value.
+                                </p>
+                                <code>
+                                    [type='radio']  {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//it will select only elements with type attribute that have a 'radio' value. </span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END [attribute=value] selection -->
 
                         <!-- START ID selection -->
 

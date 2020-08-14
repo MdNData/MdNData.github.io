@@ -26,6 +26,7 @@ header section .logo_a {
     margin: auto;
 }
 
+
 .logo {
     max-height: 100%;
     max-width: 100%; 
@@ -155,6 +156,7 @@ h2.main{
     z-index: 97;
     color: white;
     margin-bottom: 3vw;
+    text-shadow: 0 0 4px #31e8e8;
 }
 
 .welcome a {
