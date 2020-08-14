@@ -151,6 +151,10 @@ aside.content-map::-webkit-scrollbar-thumb {
     padding: 1.5vw 0 1vw 0;
 }
 
+.content-map section header h2 {
+    margin: auto 1vw;
+}
+
 .content-map ul, .content-map ol {
     list-style: disc;
 }

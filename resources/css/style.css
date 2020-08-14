@@ -84,6 +84,11 @@ header section nav ul li:hover a{
     transform: scale(1.1);
 }
 
+.in-page {
+    color: #31e8e8;
+
+}
+
 header section nav ul li:hover ul li a{
     color: hsl(180, 80%, 95%);
 }

@@ -37,7 +37,7 @@
 
      <header class='navigation'>
         <section>
-            <h1 id='go-top' class='audiowide' title='All things to know about CSS'>
+            <h1 class='audiowide' title='All things to know about CSS'>
                 <span class="middle-blue audiowide"> CheatSheets </span> 
                 for 
                 <span class="light-green audiowide">CSS</span>
@@ -101,22 +101,35 @@
             </header>
              <ol id="hide-this" class='work-sans' title='Go to ...'>
                 <li class="first">
-                    <span title="open/close">Define Style</span>
-                    <ul hidden>
-                        <li class="second">
-                            <a href="#inline-style">style = " - "</a>
-                        </li>
-                        <li class="second">
-                            <a href="#style-tag">style - tag</a>
-                        </li>
-                        <li class="second">
-                            <a href="#style-css">style - file</a>
+                    <ul>
+                        <li>
+                            <span title="open/close">Define Style</span>
+                            <ul hidden>
+                                <li>
+                                    <a href="#inline-style">style = " - "</a>
+                                </li>
+                                <li>
+                                    <a href="#style-tag">style - tag</a>
+                                </li>
+                                <li>
+                                    <a href="#style-css">style - file</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="#"></a>
-                            <ul>
+                            <span>Element Selectors</span>
+                            <ul hidden>
                                 <li>
-                                    <a href="#">╚> </a>
+                                    <a href="#tag-sel">tag</a>
+                                </li>
+                                <li>
+                                    <a href="#class-sel">class</a>
+                                </li>
+                                <li>
+                                    <a href="#ID-sel">ID</a>
+                                </li>
+                                <li>
+                                    <a href="#root-sel">:root</a>
                                 </li>
                             </ul>
                         </li>
@@ -139,57 +152,147 @@
             <header>
                 <section>
                     <header id="cssfile">
-                <h2> In the
-                    <span class="light-green">style.css</span> 
-                    file
-                </h2>
-                </header>
+                        <h2> In the
+                            <span class="light-green">style.css</span> 
+                            file
+                        </h2>
+                    </header>
 
-                <!-- START inline-style -->
+                    <!-- START define style -->
 
-                <div id='inline-style'>
-                    <h3>style = " - "</h3>
-                    <p>
-                        You can change the appearance of an HTML tag with style = " - " applied inside the opening tag.
-                    </p>
-                    <code>
-                        &lt;p <span class="dark-green">style="color:red"</span>&gt; text &lt;p&gt; 
-                    </code>
-                </div>
+                    <article>
 
-                <!-- END inline-style -->
+                        <!-- START inline-style -->
 
-                <!-- START style tag -->
+                        <div id='inline-style'>
+                            <h3>style = " - "</h3>
+                            <p>
+                                You can change the appearance of an HTML tag with style = " - " applied inside the opening tag.
+                            </p>
+                            <code>
+                                &lt;p <span class="dark-green">style="color:red"</span>&gt; text &lt;p&gt; 
+                            </code>
+                        </div>
 
-                <div id='style-tag'>
-                    <h3>&lt; style &gt;</h3>
-                    <p>
-                        Another way to insert styles inside the html file is to create a &lt;style&gt; tag inside the &lt;head&gt; tag of the body.
-                    </p>
-                    <code>
-                        &lt;style&gt;<br/> 
-                            &nbsp;&nbsp;&nbsp;&nbsp;p { <br/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br/>
-                            &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                        &lt;/style&gt;
-                    </code>
-                </div>
+                        <!-- END inline-style -->
 
-                <!-- END style tag -->
+                        <!-- START style tag -->
 
-                <!-- START style file -->
+                        <div id='style-tag'>
+                            <h3>&lt; style &gt;</h3>
+                            <p>
+                                Another way to insert styles inside the html file is to create a &lt;style&gt; tag inside the &lt;head&gt; tag of the body.
+                            </p>
+                            <code>
+                                &lt;style&gt;<br/> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;p { <br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: blue;<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+                                &lt;/style&gt;
+                            </code>
+                        </div>
 
-                <div id='style-css'>
-                    <h3>style.css</h3>
-                    <p>
-                        The last and also the best way to insert style is to write it in an external style.css file and insert it in the head of the html file.
-                    </p>
-                    <code>
-                        &lt;link href="path/style.css" rel="stylesheet" type="text/css"&gt;
-                    </code>
-                </div>
+                        <!-- END style tag -->
 
-                <!-- END style file -->
+                        <!-- START style file -->
+
+                        <div id='style-css'>
+                            <h3>style.css</h3>
+                            <p>
+                                The last and also the best way to insert style is to write it in an external style.css file and insert it in the head of the html file.
+                            </p>
+                            <code>
+                                &lt;link href="path/style.css" rel="stylesheet" type="text/css"&gt;
+                            </code>
+                        </div>
+
+                        <!-- END style file -->
+
+                    </article>
+
+                    <!-- END define style -->
+
+                    <!-- START CSS selection -->
+
+                    <article>
+
+                        <!-- START tag selection -->
+
+                            <div id="tag-sel">
+                                <h3>tag selector</h3>
+                                <p>
+                                    To edit HTML elements via CSS, we must first select them. 
+                                    <br />
+                                    The least specific way to select elements is selecting them by tag, just rewrite them in the css file as follows:
+                                </p>
+                                <code>
+                                    p {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the p tags</span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END tag selection -->
+
+                        <!-- START class selection -->
+
+                            <div id="class-sel">
+                                <h3>class selector</h3>
+                                <p>
+                                    To select a class you need to add a period in front of its name.
+                                    <br />
+                                    Selecting the class will also override the common CSS rules created by the tag selector.
+                                </p>
+                                <code>
+                                    .name {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select all the elements with name as class</span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END class selection -->
+
+                        <!-- START ID selection -->
+
+                            <div id="ID-sel">
+                                <h3>ID selector</h3>
+                                <p>
+                                    To select a ID you need to add a # in front of its name.
+                                    <br />
+                                    Selecting the ID will also override the common CSS rules created by tag and class selectors.
+                                </p>
+                                <code>
+                                    #name {<br/>
+                                    <span class="light-green">&nbsp;&nbsp;&nbsp;&nbsp;//In this way we select the element with name as id</span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END ID selection -->
+
+                        <!-- START :root selection -->
+
+                            <div id="root-sel">
+                                <h3>:root selector</h3>
+                                <p>
+                                    Select the container of the entire html file, usually css variables are assigned to it to make them globally accessible.
+                                </p>
+                                <code>
+                                    :root {<br/>
+                                    <span class="light-green"></span><br/>
+                                    }
+                                </code>
+                                
+                            </div>
+
+                        <!-- END :root selection -->
+
+                    </article>
+
+                    <!-- END CSS selection -->
 
                 </section>
             </header>
@@ -210,7 +313,7 @@
     <!-- Footer -->
 
     <footer>
-        <h6 class="dark-green">alfa 1.0.0.2 - 
+        <h6 class="dark-green">alfa 1.0.0.3 - 
             ©2020 
             <span> MdN </span>
             <span class="light-green">DATA</span>
