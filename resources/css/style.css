@@ -459,16 +459,16 @@
         background-image: url("../images/landing-img2.jpg");
         background-size: cover;
         background-position: center;
-        height: 80vh;
+        height: 100vh;
     }
 
     .img-landing section {
-        height: 80vh;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.2);
     }
 
     h2.main{
-        font-size: 7.5vw;
+        font-size: 13vw;
         z-index: 97;
         color: white;
         margin-bottom: 3vw;
