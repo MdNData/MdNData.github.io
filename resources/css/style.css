@@ -495,12 +495,12 @@
     .welcome a {
         text-decoration: none;
         background-color: #31e8e8;
-        padding: 0.8vw;
+        padding: 2vw;
         color: #246c8c;
-        border-radius: 2vw;
+        border-radius: 5vw;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         font-weight: 700;
-        font-size: 1.2vw;
+        font-size: 5vw;
     }
 
     .welcome a:hover {
