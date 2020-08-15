@@ -458,6 +458,7 @@
     .img-landing {
         background-image: url("../images/landing-img2.jpg");
         background-size: cover;
+        background-position: center;
         height: 80vh;
     }
 
