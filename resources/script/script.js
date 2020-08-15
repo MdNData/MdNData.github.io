@@ -19,11 +19,10 @@ function changeNav() {
 //add event to the window
 window.addEventListener("scroll", changeNav);
 
+//Make the hamburgher menu usable
 var menuNav = document.getElementById("menu-nav");
-
 function openNav(){
   let menu = menuNav.getElementsByTagName("ul");
   menu[0].style.display = "flex";
 }
-
 menuNav.addEventListener("click", openNav);
