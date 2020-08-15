@@ -56,3 +56,57 @@ body {
     background-image: url(../images/background-super-lighter.png);
     background-color: #f3f3f3;
 }
+
+
+/* FONTS */
+
+.cormorant {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+}
+
+.audiowide {
+    font-family: Audiowide, cursive;
+}
+
+.work-sans {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* COLOR Palette for MdN */
+
+.dark-blue {
+    color: #1c2d49;
+    color: hsl(217, 45%, 20%);
+}
+
+.middle-blue {
+    color: #246c8c;
+    color: hsl(198, 59%, 35%);
+}
+
+.middle-blue-2 {
+    color: #288dab;
+    color: hsl(194, 62%, 41%);
+}
+
+.original-middle-blue {
+    color:#33c3ea;
+    color: hsl(193, 81%, 56%);
+}
+
+.light-blue {
+    color: #31e8e8;
+    color:  hsl(180, 80%, 55%);
+}
+
+.dark-green {
+    color: #289d7b;
+    color: hsl(163, 59%, 39%);
+}
+
+.light-green {
+   color: #33ea9b;
+   color: hsl(154, 81%, 56%);
+}

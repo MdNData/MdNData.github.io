@@ -264,62 +264,75 @@ code {
 }
 
 footer {
+    display: block;
     position: relative;
-    background-color: rgba(0,0,0,0.9);
     font-size: 0.9vw;
     z-index: 99;
+    padding: 0 10vw;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 10% , rgba(49, 232, 232, 0.9) 95%);
+}
+
+footer > section.first {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    color: #1c2d49;
+}
+
+footer section h5 {
+    margin-bottom: 2vw;
+}
+
+footer section p {
+    font-size: 1vw;
+    opacity: 0.7;
+}
+
+footer section.first a, footer section.first p{
+    display: block;
+    color: #1c2d49;
+    margin-top: 1vw;
+    opacity: 0.7;
+    margin-left: 0.2vw;
+    font-weight: 400;
+}
+footer section.first a:hover {
+    transition: 0.3s;
+    color: #31e8e8;
+}
+footer > section.second {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
 
 footer hr {
-    border-top: 1px solid #246c8c;
-    width: 80%;
-    margin: auto;
+    border-top: 2px solid #33c3ea;
+    width: 80vw;
     opacity: 0.3;
 }
 
 footer h6 {
-    padding: 2vw 10vw;
     font-weight: 400;
     opacity: 0.3;
+    margin-right: 15vw;
 }
 
-/* FONTS */
-
-.audiowide {
-    font-family: Audiowide, cursive;
-}
-
-.work-sans, .work-sans a {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-}
-
-/* COLOR Palette for MdN */
-
-.dark-blue {
-    color: #1c2d49;
-}
-
-.middle-blue {
+footer a {
+    text-decoration: none;
     color: #246c8c;
+    font-weight: 700;
+    font-size: 0.9vw;
+    opacity: 0.8;
 }
 
-.middle-blue-2 {
-    color: #288dab;
-}
-
-.original-middle-blue {
-    color:#33c3ea;
-}
-
-.light-blue {
+footer a:hover {
+    transition: 0.5s;
     color: #31e8e8;
 }
 
-.dark-green {
-    color: #289d7b;
-}
-
-.light-green {
-   color: #33ea9b;
-}
