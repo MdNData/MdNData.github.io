@@ -319,7 +319,6 @@ footer a:hover {
         border-radius: 5vw;
         width: auto;
         height: 8vw;
-        margin: auto;
     }
 
 
@@ -339,13 +338,29 @@ footer a:hover {
         margin: 0.1vw;
     }
 
+
+
+
     header section nav {
-        display: none;
+        display: inline-flex;
+        height: 6vw;
+        width: 6vw;
+        margin: 1vw 5vw;
+        background-image: url(../images/menu.png);
+        background-size: 6vw 6vw;
+        background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     header section nav ul{
-        display: inline-flex;
-        margin-right: 5vw;
+        display: none;
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color:#000;
+        z-index: 99;
     }
 
     header section nav ul li {
@@ -368,9 +383,9 @@ footer a:hover {
         color: hsl(180, 80%, 95%);
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 1vw;
+        font-size: 5vw;
         transition: 0.3s;
-        display: inline-flex;
+        display:flex;
         align-items: center;
         justify-content: center;
     }
@@ -476,7 +491,7 @@ footer a:hover {
         display: block;
         position: relative;
         font-size: 0.9vw;
-        z-index: 99;
+        z-index: 98;
         padding: 0 10vw;
         background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 100%);
     }
