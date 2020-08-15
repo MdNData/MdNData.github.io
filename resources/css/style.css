@@ -170,6 +170,14 @@
         text-shadow: 0 0 4px #31e8e8;
     }
 
+    #desk-text {
+        display: inline-block;
+    }
+
+    #mob-text {
+        display: none;
+    }
+
     .welcome a {
         text-decoration: none;
         background-color: #31e8e8;
@@ -448,10 +456,10 @@
     }
 
     .welcome section {
-        padding-left: 10vw;
-        padding-right: 10vw; 
+        padding-left: 0vw;
+        padding-right: 0vw; 
         padding-top: 30vw;
-        line-height:12vw;
+        line-height:17vw;
         text-align: center;
     }
 
@@ -468,11 +476,20 @@
     }
 
     h2.main{
-        font-size: 13vw;
+        font-size: 8.5vw;
         z-index: 97;
         color: white;
         margin-bottom: 3vw;
         text-shadow: 0 0 4px #31e8e8;
+        font-weight: 600;
+    }
+
+    #desk-text {
+        display: none;
+    }
+
+    #mob-text {
+        display: inline-block;
     }
 
     .welcome a {
