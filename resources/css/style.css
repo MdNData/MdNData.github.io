@@ -448,10 +448,10 @@
     }
 
     .welcome section {
-        padding-left: 0;
-        padding-right: 0; 
-        padding-top: 20vw;
-        line-height:11vw;
+        padding-left: 10vw;
+        padding-right: 10vw; 
+        padding-top: 30vw;
+        line-height:12vw;
         text-align: center;
     }
 
@@ -467,7 +467,7 @@
     }
 
     h2.main{
-        font-size: 7vw;
+        font-size: 7.5vw;
         z-index: 97;
         color: white;
         margin-bottom: 3vw;
