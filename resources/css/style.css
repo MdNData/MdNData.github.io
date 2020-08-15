@@ -458,7 +458,7 @@
     .welcome section {
         padding-left: 0vw;
         padding-right: 0vw; 
-        padding-top: 50vw;
+        padding-top: 40vw;
         line-height:18vw;
         text-align: center;
     }
@@ -479,7 +479,7 @@
         font-size: 8.5vw;
         z-index: 97;
         color: white;
-        margin-bottom: 3vw;
+        margin-bottom: 10vw;
         text-shadow: 0 0 4px #31e8e8;
         font-weight: 600;
     }
