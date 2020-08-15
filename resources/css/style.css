@@ -356,7 +356,7 @@
         display: inline-flex;
         height: 10vw;
         width: 10vw;
-        margin: 3vw 8vw;
+        margin: 3vw 6vw;
         background-image: url(../images/menu.png);
         background-size: 10vw 10vw;
         background-repeat: no-repeat;
@@ -458,7 +458,7 @@
     .welcome section {
         padding-left: 0vw;
         padding-right: 0vw; 
-        padding-top: 30vw;
+        padding-top: 50vw;
         line-height:18vw;
         text-align: center;
     }
