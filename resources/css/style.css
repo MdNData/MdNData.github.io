@@ -313,6 +313,8 @@
         justify-content: space-between;
         background-color: rgba(0,0,0,0.4);
         transition: 1s;
+        position: fixed;
+        top:0;
     }
     .nav-colored { 
         background-color:#000 !important; 
