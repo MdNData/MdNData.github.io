@@ -375,13 +375,12 @@
         top: 0;
         background-color:#000;
         z-index: 99;
+        flex-direction: column;
+        align-items: center;
     }
 
     header section nav ul li {
-        margin: auto 1.5vw;
-        display: inline-flex;
-        height:4vw;
-
+        margin: 5vw 1.5vw;
     }
 
 
@@ -397,7 +396,7 @@
         color: hsl(180, 80%, 95%);
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 5vw;
+        font-size: 9vw;
         transition: 0.3s;
         display:flex;
         align-items: center;
