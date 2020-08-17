@@ -137,6 +137,10 @@
         width: 7.7vw;
     }
 
+    #close-nav {
+        display: none;
+    }
+
     /* MAIN CONTENT */ 
 
     div.header-spaced {
@@ -321,6 +325,15 @@
     }
     .nav-transparent { 
         background-color: rgba(0,0,0,0.4) !important;
+    }
+
+    #close-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12vw;
+        height: auto;
+        margin: 8vw;
     }
 
     header section .logo_a {
