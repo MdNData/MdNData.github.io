@@ -331,9 +331,9 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 10vw;
+        width: 8vw;
         height: auto;
-        margin: 8vw;
+        margin: 6vw;
     }
 
     header section .logo_a {
@@ -390,7 +390,7 @@
         z-index: 99;
         flex-direction: column;
         align-items: center;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
 
     header section nav ul li {
