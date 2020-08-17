@@ -327,15 +327,6 @@
         background-color: rgba(0,0,0,0.4) !important;
     }
 
-    #close-nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 8vw;
-        height: auto;
-        margin: 6vw;
-    }
-
     header section .logo_a {
         text-decoration: none;
         display: inline-flex;
@@ -365,19 +356,27 @@
         margin: 0.1vw;
     }
 
-
-
-
-    header section nav {
+    #open-nav{
         display: inline-flex;
         height: 10vw;
         width: 10vw;
         margin: 3vw 6vw;
         background-image: url(../images/menu.png);
-        background-size: 10vw 10vw;
-        background-repeat: no-repeat;
         cursor: pointer;
     }
+
+
+    #close-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 8vw;
+        height: auto;
+        margin-right: 7vw;
+        margin-top: 4vw;
+        cursor: pointer;
+    }
+
 
     header section nav ul{
         display: none;

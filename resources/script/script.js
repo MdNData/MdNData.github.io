@@ -19,10 +19,16 @@ function changeNav() {
 //add event to the window
 window.addEventListener("scroll", changeNav);
 
+
 //Make the hamburgher menu usable
-var menuNav = document.getElementById("menu-nav");
+var menuNav = document.getElementById("menu-nav").getElementsByTagName("ul");
+var openMenuNav = document.getElementById("open-nav");
+var closeMenuNav = document.getElementById("close-nav");
 function openNav(){
-  let menu = menuNav.getElementsByTagName("ul");
-  menu[0].style.display = "flex";
+  menuNav[0].style.display = "flex";
 }
-menuNav.addEventListener("click", openNav);
+function closeNav(){
+  menuNav[0].style.display = "none";
+}
+openMenuNav.addEventListener("click", openNav);
+closeMenuNav.addEventListener("click", closeNav);
