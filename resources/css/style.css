@@ -137,6 +137,10 @@
         width: 7.7vw;
     }
 
+    #open-nav {
+        display: none;
+    }
+
     #close-nav {
         display: none;
     }
@@ -540,6 +544,7 @@
         padding-top: 3vw;
         padding-bottom: 3vw;
         color: #1c2d49;
+        flex-direction: column;
     }
 
     footer section h5 {
