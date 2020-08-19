@@ -280,7 +280,6 @@
     footer h6 {
         font-weight: 400;
         opacity: 0.3;
-        margin-right: 15vw;
     }
 
     footer a {
@@ -565,7 +564,7 @@
         font-size: 0.9vw;
         z-index: 98;
         padding: 0 10vw;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 50%);
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 70%);
     }
 
     footer > section.first {
@@ -613,7 +612,7 @@
         justify-content: space-between;
         padding-top: 3vw;
         padding-bottom: 3vw;
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -642,6 +641,15 @@
 
     footer a:hover {
         transition: 0.5s;
+        color: #33c3ea;
+    }
+
+    footer a i {
+        font-size: 6vw !important;
+        color: #31e8e8;
+    }
+    footer a i:hover {
+        font-size: 6vw !important;
         color: #33c3ea;
     }
 
