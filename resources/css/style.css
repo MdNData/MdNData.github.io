@@ -585,6 +585,7 @@
 
     footer section h5 {
         margin-bottom: 2vw;
+        font-family: "Audiowide";
     }
 
     footer section p {
@@ -601,6 +602,7 @@
         font-weight: 400;
         font-size: 4vw;
         padding: 2vw;
+        font-family: "Audiowide";
     }
     footer section.first a:hover {
         transition: 0.3s;
