@@ -573,7 +573,7 @@
     }
     footer section.first a:hover {
         transition: 0.3s;
-        color: #31e8e8;
+        color: #33c3ea;
     }
     footer > section.second {
         display: flex;
