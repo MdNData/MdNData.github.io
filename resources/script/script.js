@@ -24,11 +24,9 @@ window.addEventListener("scroll", changeNav);
 var menuNav = document.getElementById("menu-nav").getElementsByTagName("ul");
 var openMenuNav = document.getElementById("open-nav");
 var closeMenuNav = document.getElementById("close-nav");
-function openNav(){
+openMenuNav.addEventListener("click", function(){
   menuNav[0].style.display = "flex";
-}
-function closeNav(){
+});
+closeMenuNav.addEventListener("click", function(){
   menuNav[0].style.display = "none";
-}
-openMenuNav.addEventListener("click", openNav);
-closeMenuNav.addEventListener("click", closeNav);
+});

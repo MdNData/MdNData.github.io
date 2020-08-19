@@ -533,18 +533,23 @@
         font-size: 0.9vw;
         z-index: 98;
         padding: 0 10vw;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 100%);
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 50%);
     }
 
     footer > section.first {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        font-size: 1.3vw;
+        font-size: 8.3vw;
         padding-top: 3vw;
         padding-bottom: 3vw;
         color: #1c2d49;
         flex-direction: column;
+        text-align: center;
+    }
+
+    footer section div {
+        margin-bottom: 4vw;
     }
 
     footer section h5 {
@@ -563,6 +568,8 @@
         opacity: 0.7;
         margin-left: 0.2vw;
         font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw;
     }
     footer section.first a:hover {
         transition: 0.3s;
@@ -574,6 +581,8 @@
         justify-content: space-between;
         padding-top: 3vw;
         padding-bottom: 3vw;
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
     footer hr {
@@ -583,17 +592,20 @@
     }
 
     footer h6 {
+        text-align: center;
         font-weight: 400;
+        margin-top: 5vw;
         opacity: 0.3;
-        margin-right: 15vw;
+        font-size: 2.95vw;
     }
 
     footer a {
         text-decoration: none;
         color: #246c8c;
         font-weight: 700;
-        font-size: 0.9vw;
+        font-size: 4vw;
         opacity: 0.8;
+        padding: 2vw;
     }
 
     footer a:hover {
