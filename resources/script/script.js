@@ -40,10 +40,12 @@ closeMenuNav.addEventListener("click", function(){
 //Make sub lists of menu appear and disappear
 let showing = document.getElementById('menu-nav');
 function hideElement(e){
-  if(e.target.tagName.toLowerCase() === 'a' && e.target.nextElementSibling.style.display==="inline-flex"){
-    e.target.nextElementSibling.style.display="none";
-  } else if (e.target.tagName.toLowerCase() === 'a'){
-    e.target.nextElementSibling.style.display="inline-flex";
+  if(window.innerHeight > window.innerWidth){
+    if(e.target.tagName.toLowerCase() === 'a' && e.target.nextElementSibling.style.display==="inline-flex"){
+      e.target.nextElementSibling.style.display="none";
+    } else if (e.target.tagName.toLowerCase() === 'a'){
+      e.target.nextElementSibling.style.display="inline-flex";
+    }
   }
 }
 showing.addEventListener('click', hideElement);
