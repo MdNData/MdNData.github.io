@@ -58,7 +58,7 @@ function hideElement(e){
         e.target.classList.remove('fa-stream');
         e.target.classList.add('fa-times');
         e.target.style.fontSize = "15vw";
-      }
+      } 
     }
   }
 }

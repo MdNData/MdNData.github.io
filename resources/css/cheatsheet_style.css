@@ -510,7 +510,7 @@ header section nav ul li {
     }
 
     div.header-spaced {
-        height: 4vw;
+        height: 17vw;
     }
 
     /* CONTENT MAP */
@@ -628,13 +628,13 @@ header section nav ul li {
     /* MAIN CONTENT */
 
     main section {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     main section header {
         padding-top: 5vw;
-        font-size: 2vw;
+        font-size: 7vw;
     }
 
     article div {
@@ -647,17 +647,20 @@ header section nav ul li {
         text-decoration: none;
         color: #31e8e8;
         transition: 0.3s;
-        font-size: 7vw;
+        font-size: 6vw;
+        margin-top: 4vw;
     }
 
     article h4 {
-        font-size: 1.7vw;
+        font-size: 6vw;
         margin-bottom: 1vw;
+        margin-top: 4vw;
     }
 
     article p {
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 4vw;
+        line-height: 6vw;
+        margin-top: 4vw;
     }
 
     code {
@@ -682,23 +685,31 @@ header section nav ul li {
         display: block;
         position: relative;
         font-size: 0.9vw;
-        z-index: 97;
+        z-index: 96;
         padding: 0 10vw;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 10% , rgba(49, 232, 232, 0.9) 95%);
+        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(49, 232, 232, 0.9) 70%);
+        margin-top: 10vw;
     }
 
     footer > section.first {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        font-size: 1.3vw;
+        font-size: 8.3vw;
         padding-top: 3vw;
         padding-bottom: 3vw;
         color: #1c2d49;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer section div {
+        margin-bottom: 4vw;
     }
 
     footer section h5 {
         margin-bottom: 2vw;
+        font-family: "Audiowide";
     }
 
     footer section p {
@@ -713,10 +724,13 @@ header section nav ul li {
         opacity: 0.7;
         margin-left: 0.2vw;
         font-weight: 400;
+        font-size: 4vw;
+        padding: 2vw;
+        font-family: "Audiowide";
     }
     footer section.first a:hover {
         transition: 0.3s;
-        color: #31e8e8;
+        color: #33c3ea;
     }
     footer > section.second {
         display: flex;
@@ -724,6 +738,8 @@ header section nav ul li {
         justify-content: space-between;
         padding-top: 3vw;
         padding-bottom: 3vw;
+        flex-direction: column;
+        text-align: center;
     }
 
     footer hr {
@@ -733,21 +749,33 @@ header section nav ul li {
     }
 
     footer h6 {
+        text-align: center;
         font-weight: 400;
+        margin-top: 5vw;
         opacity: 0.3;
-        margin-right: 15vw;
+        font-size: 2.95vw;
     }
 
     footer a {
         text-decoration: none;
         color: #246c8c;
         font-weight: 700;
-        font-size: 0.9vw;
+        font-size: 4vw;
         opacity: 0.8;
+        padding: 2vw;
     }
 
     footer a:hover {
         transition: 0.5s;
+        color: #33c3ea;
+    }
+
+    footer a i {
+        font-size: 6vw !important;
         color: #31e8e8;
+    }
+    footer a i:hover {
+        font-size: 6vw !important;
+        color: #33c3ea;
     }
 }
