@@ -37,8 +37,13 @@ closeMenuNav.addEventListener("click", function(){
 });
 
 
+
+
 //Make sub lists of menu appear and disappear
 let showing = document.getElementById('menu-nav');
+//Make headers index menu appear/disappear
+var indexMenu = document.getElementById('open-index');
+indexMenu.addEventListener('click', hideElement);
 function hideElement(e){
   if(window.innerHeight > window.innerWidth){
     if((e.target.tagName.toLowerCase() === 'a' || e.target.nextElementSibling.tagName.toLowerCase() === "section") && e.target.nextElementSibling.style.display==="inline-flex"){
@@ -59,8 +64,3 @@ function hideElement(e){
   }
 }
 showing.addEventListener('click', hideElement);
-
-
-//Make headers index menu appear/disappear
-var indexMenu = document.getElementById('open-index');
-indexMenu.addEventListener('click', hideElement);

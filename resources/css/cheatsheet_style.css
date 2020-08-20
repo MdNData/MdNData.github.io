@@ -589,6 +589,7 @@ header section nav ul li {
 
     nav ol li.first {
         text-align: center;
+        margin-bottom: 10vw;
     }
 
     nav ol li a , li.first div a{
