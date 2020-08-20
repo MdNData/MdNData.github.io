@@ -388,7 +388,7 @@
     }
 
     header.navigation section h1{
-        font-size: 5.5vw;
+        font-size: 5vw;
         margin: 0.7vw 0.5vw;
         display: inline-flex;
         align-items: center;
@@ -670,6 +670,8 @@ header section nav ul li {
         background-color: rgba(0, 0, 0, 0.75);
         color: #33c3ea;
         margin-top: 1vw;
+        width: 100%;
+        font-size: 3vw;
     }
 
     .no-bottom {
