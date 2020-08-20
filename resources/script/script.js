@@ -43,8 +43,18 @@ function hideElement(e){
   if(window.innerHeight > window.innerWidth){
     if((e.target.tagName.toLowerCase() === 'a' || e.target.nextElementSibling.tagName.toLowerCase() === "section") && e.target.nextElementSibling.style.display==="inline-flex"){
       e.target.nextElementSibling.style.display="none";
+      if(e.target.nextElementSibling.tagName.toLowerCase() === "section"){
+        e.target.classList.remove('fa-times');
+        e.target.classList.add('fa-stream');
+        e.target.style.fontSize = "8vw";
+      }
     } else if (e.target.tagName.toLowerCase() === 'a' || e.target.nextElementSibling.tagName.toLowerCase() === "section"){
       e.target.nextElementSibling.style.display="inline-flex";
+      if(e.target.nextElementSibling.tagName.toLowerCase() === "section"){
+        e.target.classList.remove('fa-stream');
+        e.target.classList.add('fa-times');
+        e.target.style.fontSize = "15vw";
+      }
     }
   }
 }

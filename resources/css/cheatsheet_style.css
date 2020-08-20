@@ -371,7 +371,7 @@
     header.navigation {
        width: 100%;
         position: fixed;
-        z-index:98;
+        z-index:97;
         top: 0;
     }
 
@@ -429,7 +429,7 @@
         left: 0;
         top: 0;
         background-color:#000;
-        z-index: 98;
+        z-index: 97;
         flex-direction: column;
         align-items: center;
         padding-top: 5vh;
@@ -474,7 +474,7 @@ header section nav ul li {
         background-color: #fff;
         border-bottom-right-radius: 1vw;
         border-bottom-left-radius: 1vw;
-        z-index: 97;
+        z-index: 96;
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
         background-color: rgba(0,0,0,0.4);
         transition: 1s;
@@ -521,7 +521,7 @@ header section nav ul li {
         height: 10vw;
         bottom: 3vw;
         right: 6vw;
-        z-index: 99;
+        z-index: 98;
     }
 
     aside.content-map {
@@ -545,6 +545,9 @@ header section nav ul li {
         bottom: 4vw;
         right: 4vw;
         font-size: 8vw;
+        z-index: 99;
+        color: #33c3ea;
+        transition: 1s;
     }
 
     .content-map section {
@@ -554,9 +557,10 @@ header section nav ul li {
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 99;
+        z-index: 98;
         flex-direction: column;
         background-color: black;
+        overflow: scroll;
     }
 
     .content-map section header {
@@ -572,7 +576,7 @@ header section nav ul li {
     }
 
     .content-map li {
-        line-height: 5vw;
+        line-height: 12vw;
     }
 
     .content-map ul li ul li {
@@ -584,15 +588,23 @@ header section nav ul li {
     }
 
     nav ol li.first {
-        margin-left: 2vw;
+        text-align: center;
     }
 
-    nav ol li a , div a{
-        margin-right: 3vw;
+    nav ol li a , li.first div a{
         text-decoration: none;
         color: #31e8e8;
         transition: 0.3s;
         font-size: 7vw;
+    }
+
+    li.first div{
+        margin: 5vw;
+        color: #33c3ea;
+    }
+
+    li.first div a {
+        color: #33c3ea;
     }
 
     nav ol li a:hover, div a:hover{
@@ -601,7 +613,7 @@ header section nav ul li {
 
     nav ol li span {
         cursor: pointer;
-        margin-right: 3vw;
+        padding: 3vw;
         text-decoration: none;
         color: #31e8e8;
         transition: 0.3s;
@@ -669,7 +681,7 @@ header section nav ul li {
         display: block;
         position: relative;
         font-size: 0.9vw;
-        z-index: 98;
+        z-index: 97;
         padding: 0 10vw;
         background: linear-gradient(to top, rgba(0,0,0,0.9) 10% , rgba(49, 232, 232, 0.9) 95%);
     }
