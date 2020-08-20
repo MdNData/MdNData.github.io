@@ -63,4 +63,20 @@ function hideElement(e){
   }
 }
 showing.addEventListener('click', hideElement);
-indexMenu.addEventListener('click', hideElement);
+indexMenu!==null ? indexMenu.addEventListener('click', hideElement):indexMenu=undefined;
+
+
+//HANDLEBARS
+//Selezioniamo l'elemento con l'id welcome-mess e prendiamo il contenuto di quell'elemento tramite innerHTML salvandolo poi in una variabile chiamata source
+const source = document.getElementById("first-offer-mess").innerHTML;
+//Richiamiamo l'handlebars compiler e gli passiamo la variabile apprena creata, questo compiler ritorna una funzione che salviamo dentro a una variabile chiamata template, questa funzione richiede come argomento un oggetto che dichiariamo appunto dopo con il come di context
+const template = Handlebars.compile(source);
+//Dentro all'oggetto dichiariamo e assegnamo tutte le variabili che vengono usate dentro all'html e a quali vogliamo assegnare dei valori, in questo caso vogliamo assegnare a tutti i posti dove si usa la variabile user il valore "Dragos"
+const context = {
+  firstOffer: "Simple Landing Page"
+}
+//poi richiamiamo la funzione di prima con l'oggetto appena creato salvando il risultato in una variabile che si chiama compiledHtml
+const compiledHtml = template(context);
+//Infine selezioniamo l'elemento che dovra contenere il nostro html creato con handlebars
+const userName = document.getElementById("first-offer");
+userName.innerHTML = compiledHtml;
