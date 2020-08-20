@@ -425,7 +425,7 @@
         display: none;
         position: absolute;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         left: 0;
         top: 0;
         background-color:#000;
@@ -553,7 +553,7 @@ header section nav ul li {
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100%;
+        height: 100vh;
         z-index: 99;
         flex-direction: column;
         background-color: black;
@@ -638,19 +638,13 @@ header section nav ul li {
     }
 
     article h4 {
-        margin-right: 3vw;
-        text-decoration: none;
-        color: #31e8e8;
-        transition: 0.3s;
-        font-size: 7vw;
+        font-size: 1.7vw;
+        margin-bottom: 1vw;
     }
 
     article p {
-        margin-right: 3vw;
-        text-decoration: none;
-        color: #31e8e8;
-        transition: 0.3s;
-        font-size: 7vw;
+        font-size: 1.5vw;
+        line-height: 2vw;
     }
 
     code {
