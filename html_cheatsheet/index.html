@@ -27,7 +27,10 @@
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b28da8268.js" crossorigin="anonymous"></script>
     <script src='./resources/script/script.js' type="text/javascript" async></script>
+    <script src='../resources/script/script.js' type="text/javascript" async></script>
+
 </head>
 
 <body class="dark-blue">
@@ -42,8 +45,12 @@
                 for 
                 <span class="light-green audiowide">HTML</span>
             </h1>
-            <nav>
+             <img id="open-nav" src="../resources/images/menu.png">
+            <nav id="menu-nav">
                 <ul>
+                     <li>
+                       <img id="close-nav" src="../resources/images/close-menu.png"> 
+                    </li>
                     <li>
                         <a href="../index.html" title='Go to homepage.'>Home</a>
                     </li>
@@ -64,7 +71,7 @@
                         <ul>
                             <li>
                                 
-                                <a href="#" title="HTML - CheatSheet"><img src="resources/images/html5_s.png">HTML</a>
+                                <a href="#" class="in-page" title="HTML - CheatSheet"><img src="resources/images/html5_s.png">HTML</a>
                             </li>
                             <li>
                                
@@ -98,6 +105,7 @@
 
     <aside class='content-map'>
         <nav>
+        <i id="open-index" class="fas fa-stream"></i>
         <section>
 
             <header class="dark-green">
