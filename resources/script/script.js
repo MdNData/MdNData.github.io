@@ -43,7 +43,6 @@ closeMenuNav.addEventListener("click", function(){
 let showing = document.getElementById('menu-nav');
 //Make headers index menu appear/disappear
 var indexMenu = document.getElementById('open-index');
-indexMenu.addEventListener('click', hideElement);
 function hideElement(e){
   if(window.innerHeight > window.innerWidth){
     if((e.target.tagName.toLowerCase() === 'a' || e.target.nextElementSibling.tagName.toLowerCase() === "section") && e.target.nextElementSibling.style.display==="inline-flex"){
@@ -64,3 +63,4 @@ function hideElement(e){
   }
 }
 showing.addEventListener('click', hideElement);
+indexMenu.addEventListener('click', hideElement);
