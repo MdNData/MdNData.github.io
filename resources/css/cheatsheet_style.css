@@ -544,7 +544,7 @@ header section nav ul li {
         position: fixed;
         bottom: 4vw;
         right: 4vw;
-        font-size: 8vw;
+        font-size: 10vw;
         z-index: 99;
         color: #33c3ea;
         transition: 1s;

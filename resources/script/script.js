@@ -50,7 +50,7 @@ function hideElement(e){
       if(e.target.nextElementSibling.tagName.toLowerCase() === "section"){
         e.target.classList.remove('fa-times');
         e.target.classList.add('fa-stream');
-        e.target.style.fontSize = "8vw";
+        e.target.style.fontSize = "10vw";
       }
     } else if (e.target.tagName.toLowerCase() === 'a' || e.target.nextElementSibling.tagName.toLowerCase() === "section"){
       e.target.nextElementSibling.style.display="inline-flex";
