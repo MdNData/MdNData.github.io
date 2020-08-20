@@ -5,7 +5,6 @@ var topNavSub1 = document.getElementById('resources-sub1');
 var topNavSub2 = document.getElementById('resources-sub2');
 //Function that is run with the Scroll event
 function changeNav() {
-  if(window.innerHeight < window.innerWidth){
     if (window.pageYOffset > 10) {
       topNav.classList.add("nav-colored");
       topNav.classList.remove("nav-transparent");
@@ -21,7 +20,6 @@ function changeNav() {
       topNavSub2.classList.add("nav-transparent");
       topNavSub2.classList.remove("nav-colored");
     }
-  }
 }
 //add event to the window
 window.addEventListener("scroll", changeNav);
