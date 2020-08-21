@@ -712,4 +712,8 @@
         color: #33c3ea;
     }
 
+    .share {
+        display: none;
+    }
+
 }
