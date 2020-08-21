@@ -25,6 +25,14 @@
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Facebook Share -->
+    <meta property="og:url" content="https://mdndata.github.io/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Web Design & Development Company | MdN Data Software" />
+    <meta property="og:description" content="We create professional websites, e-commerce and applications for your start-up, thanks to our SEO techniques your site will always be the first in search engines, and thanks to our optimization there will be no dissatisfied customers because the site loads slowly. Welcome to MdN Data Software." />
+    <meta property="og:image" content="https://mdndata.github.io/resources/favicons/favicon.png" />
+
     <script src="https://kit.fontawesome.com/6b28da8268.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
     <script src='./resources/script/script.js' type="text/javascript" async></script>
@@ -33,7 +41,13 @@
     <!-- Give it an id that is used for select a specific element from the js file and a type for the handlebar -->
     <!-- {{}} servono a inserire dati dal JS -->
     <script id="first-offer-mess" type="text/x-handlebars-template">
-        {{firstOffer}}
+        {{#if display}}
+            {{#each firstOffer}}
+                <a href="{{this.link}}">{{this.name}}</a>
+            {{/each}}
+        {{else}}
+            <a href="">No offerts at the moment</a>
+        {{/if}}        
     </script>
 
 </head>
@@ -59,6 +73,13 @@
                 <ul>
                     <li>
                        <img id="close-nav" src="./resources/images/close-menu.png"> 
+                    </li>
+                    <li>
+                        <!-- Your share button code -->
+<div class="fb-share-button" 
+data-href="https://www.your-domain.com/your-page.html" 
+data-layout="button_count">
+</div>
                     </li>
                     <li>
                         <a class="in-page" href="./index.html" title='Go to homepage.'>Home</a>
@@ -147,7 +168,9 @@
             
             <div>
                 <h5>Services</h5>
-                <a id="first-offer" href=""></a>
+                <div id="first-offer">
+                    
+                </div>
             </div>
             <!-- <div>
                 <h5>Portfolio</h5>
@@ -189,5 +212,14 @@
             </h6>
         </section>
     </footer>
+        <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

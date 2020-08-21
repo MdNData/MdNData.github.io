@@ -73,10 +73,26 @@ const source = document.getElementById("first-offer-mess").innerHTML;
 const template = Handlebars.compile(source);
 //Dentro all'oggetto dichiariamo e assegnamo tutte le variabili che vengono usate dentro all'html e a quali vogliamo assegnare dei valori, in questo caso vogliamo assegnare a tutti i posti dove si usa la variabile user il valore "Dragos"
 const context = {
-  firstOffer: "Simple Landing Page"
+  display:false,
+  firstOffer:[
+    {
+      name: "Simple Landing Page",
+      link: "/landing/"
+    },
+    {
+      name: "Business WebSite",
+      link: "/business/"
+    },
+    {
+      name: "E-Commerce",
+      link: "/ecom/"
+    }
+  ]
 }
 //poi richiamiamo la funzione di prima con l'oggetto appena creato salvando il risultato in una variabile che si chiama compiledHtml
 const compiledHtml = template(context);
 //Infine selezioniamo l'elemento che dovra contenere il nostro html creato con handlebars
 const userName = document.getElementById("first-offer");
 userName.innerHTML = compiledHtml;
+
+//Use Handlebars with IF ELSE /IF

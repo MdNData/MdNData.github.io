@@ -27,6 +27,14 @@
     <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+
+    <!-- Facebook Share -->
+    <meta property="og:url" content="https://mdndata.github.io/html_cheatsheet/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HTML | CheatSheet | MdN Data Software" />
+    <meta property="og:description" content="Here you can find everything you need to know about HTML. A complete guide on how to use all HTML elements and what they are for. Welcome to MdN Data Software." />
+    <meta property="og:image" content="https://mdndata.github.io/resources/favicons/favicon.png" />
+
     <script src="https://kit.fontawesome.com/6b28da8268.js" crossorigin="anonymous"></script>
     <script src='./resources/script/script.js' type="text/javascript" async></script>
     <script src='../resources/script/script.js' type="text/javascript" async></script>
@@ -1121,5 +1129,14 @@
     </footer>
 
     <!-- END Footer -->
+        <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
