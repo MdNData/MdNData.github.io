@@ -350,6 +350,63 @@
         color: #31e8e8;
     }
 
+    .share {
+        position: fixed;
+        z-index: 99;
+        bottom: 50vh;
+        right: 1vw;
+        width: 7vw;
+        height: 12vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .share-on {
+        position: absolute; 
+        bottom: 13vw;
+        font-size: 1.2vw;
+        font-family: "Audiowide";
+        width: 7vw;
+        color: transparent;
+        background-image: linear-gradient(to left, #8134AF, #33ea9b, #31e8e8, #DD2A7B, #F58529, #FEDA77);
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+        background-size: 1000%;
+        text-align: center;
+    }
+
+    .share-on i {
+        font-size: 2vw;
+    }
+
+    .share-f a {
+        color: transparent !important;
+        background-image: linear-gradient(to left, #8134AF, #33ea9b, #31e8e8, #DD2A7B, #F58529, #FEDA77);
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+        background-size: 1000%;
+        text-align: center;
+        font-size: 2.5vw;
+        padding-left: 2.5vw;
+    }
+
+    @keyframes animate 
+    {
+        0%
+        {
+            background-position: 0% 100%;
+        }
+        50%
+        {
+            background-position: 100% 0%;
+        }
+        100%
+        {
+            background-position: 0% 100%;
+        }
+
+    }  
+
 }
 
 
