@@ -10,7 +10,7 @@ function hideElement(e){
 		e.target.nextElementSibling.hidden=false;
 	} else if (e.target.tagName.toLowerCase() === 'span' && e.target.nextElementSibling.hidden === false){
 		e.target.nextElementSibling.hidden=true;
-	} else if (e.target.parentElement.parentElement.hidden===false){
+	} else if (e.target.parentElement.parentElement.hidden===false && window.innerWidth < window.innerHeight){
         indexMenuHide.nextElementSibling.style.display = "none";
         indexMenuHide.classList.remove('fa-times');
         indexMenuHide.classList.add('fa-stream');
