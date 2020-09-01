@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+section {
+    padding: 7em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+.split {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.split>* {
+    flex-basis: 30%;
+    min-width: 15em;
+}
+
+/* >*+* applica lo stile solo se l'elemento ha un sibling prima di lui cioe un elemento nello stesso container */
+.spacing>*+* {
+    margin-top: var(--spacer, 2rem)
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    color: var(--clr-text, white);
+    border-radius: .25em;
+    transition:
+        transform 250ms ease-in-out,
+        opacity 250ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.primary-title {
+    font-size: 4rem;
+    font-size: clamp(1.7rem, calc(5vw + 1rem), 4.5rem);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    margin-bottom: 5rem;
+}
+
+.hero {
+    color: white;
+    text-align: center;
+    padding: 10em 0;
+    background: #222;
+}
+
+/* Se il browser non supporta blend mode allora ignora quello che ce dentro a supports altrimenti lo usa */
+@supports (background-blend-mode: multiply) {
+    .hero {
+        background:
+            url(../img/bitcarbidmov-min.png),
+            radial-gradient(#444, #111);
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.features {
+    background: #eee;
+}
+
+.featured-item {
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+}
+
+
+
+.featured-item:hover,
+.featured-item:focus {
+    transform: scale(1);
+}
+
+.featured-item:hover .featured_details,
+.featured-item:focus .featured_details {
+    opacity: 1;
+    text-shadow: 0 0 2em rgba(255, 0, 0, 0.25);
+}
+
+.featured-item::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 75% 75% 0 0;
+    background: #63d8f5;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.featured_details {
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+
+.featured_details span {
+    display: block;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.product {
+    background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+    padding: 3em;
+    border-radius: 3em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+.product__title {
+    font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+    line-height: 1.1;
+    color: white;
+    text-shadow: 0 0 .2em rgba(0,0,0,0.4);
+}
+.product-image{
+    margin: -5em 0 0 0;
+}
+
+@media (min-width: 45em) {
+    .product {
+        text-align: left;
+        margin-bottom: 9em;
+    }
+    .product-image {
+        float: right;
+        width: 55%;
+        margin: -5em -5em 0 0;
+        max-height: 80%;
+        shape-outside: url(../img/bitcarbidmov-min.jpg);
+        shape-margin: 1em;
+    }
+
+    .product__title {
+        margin: 0;
+    }
+
+}
+
+* {
+    --clr-inner: lightpink;
+    --clr-outer: rgb(252, 140, 158);
+    --clr-accent: rgb(32, 197, 252);
+
+}
+
+.hero .btn{
+    --clr-accent: rgb(252, 140, 158);
+}
