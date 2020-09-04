@@ -78,7 +78,7 @@ nav > ul.social i , .fa-bars{
         height: 86vh;
         background:
             url(../images/GA.jpg),
-            radial-gradient(#9c651ccc,#edd198d3);
+            radial-gradient(#edd198,#9c651c);
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
