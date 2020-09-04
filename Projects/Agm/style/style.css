@@ -1,10 +1,33 @@
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+nav > ul.social i , .fa-bars{
+    font-size: 9vw;
+    text-align: center;
+    background: -webkit-linear-gradient(
+        120deg,
+        #9c6c24,
+        #b3782b,
+        #dfa344,
+        #edd198,
+        #dfa344,
+        #b3782b,
+        #9c6c24
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto 0;
+}
+
 @media only screen and (orientation: portrait) {
     header {
         position: fixed;
         width: 100%;
         height: 20vw;
         background: #FFF;
-        bottom: 0;
+        top:0;
     }
     
     header nav {
@@ -13,7 +36,7 @@
         align-content: center;
         align-items: center;
         height: 20vw;
-        background: #FFF;
+        background: #FFF
     }
 
     nav > a {
@@ -55,12 +78,21 @@
         height: 86vh;
         background:
             url(../images/GA.jpg),
-            radial-gradient(#94825f,#edd198);
+            radial-gradient(#9c641c,#edd198);
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+        line-height: 25vw;
+    }
+
+    .hero h1 {
+        font-size: 9vw;
+        text-align: center;
+        padding-top: 15vw;
+        color: #fee7ba;
+        font-weight: 300;
     }
 
     .hero > img {
@@ -69,21 +101,3 @@
     
 }
 
-
-nav > ul.social i , .fa-bars{
-    font-size: 9vw;
-    text-align: center;
-    background: -webkit-linear-gradient(
-        120deg,
-        #9c6c24,
-        #b3782b,
-        #dfa344,
-        #edd198,
-        #dfa344,
-        #b3782b,
-        #9c6c24
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: auto 0;
-}
