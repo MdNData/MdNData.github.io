@@ -11,7 +11,7 @@
         justify-content: space-evenly;
         align-content: center;
         align-items: center;
-        height: 16vw;
+        height: 20vw;
         background: #FFF;
     }
 
@@ -20,10 +20,10 @@
     }
     
     nav > a > img {
-        width: 27vw;
+        width: 32vw;
         max-width: 100%;
         max-height: 100%;
-        margin: auto;
+        margin: auto 2vw;
     }
 
     nav > ul {
@@ -32,17 +32,18 @@
     }
 
     nav > ul > li {
-        margin: auto 3vw;
+        margin: auto 4.5vw;
     }
 
     
 
     .fa-facebook-f {
-        font-size: 7vw !important;
+        font-size: 8vw !important;
+        margin-left: 7vw !important;
     }
 
     .fa-phone-alt {
-        font-size:7vw !important;
+        font-size:7.5vw !important;
     }
 
     nav > ul.menu {
@@ -69,7 +70,7 @@
 
 
 nav > ul.social i , .fa-bars{
-    font-size: 8vw;
+    font-size: 9vw;
     text-align: center;
     background: -webkit-linear-gradient(
         120deg,
