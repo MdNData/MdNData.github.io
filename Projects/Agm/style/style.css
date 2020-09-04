@@ -78,7 +78,7 @@ nav > ul.social i , .fa-bars{
         height: 86vh;
         background:
             url(../images/GA.jpg),
-            radial-gradient(#9c641c,#edd198);
+            radial-gradient(#9c651ccc,#edd198d3);
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -90,9 +90,13 @@ nav > ul.social i , .fa-bars{
     .hero h1 {
         font-size: 9vw;
         text-align: center;
-        padding-top: 15vw;
+        padding-top: 25vw;
         color: #fee7ba;
         font-weight: 300;
+    }
+
+    .hero h1 >i {
+        font-size: 7vw;
     }
 
     .hero > img {
