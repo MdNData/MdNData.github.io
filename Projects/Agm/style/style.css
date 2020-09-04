@@ -1,6 +1,6 @@
 
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive, sans-serif;
 }
 
 nav > ul.social i , .fa-bars{
@@ -78,7 +78,7 @@ nav > ul.social i , .fa-bars{
         height: 86vh;
         background:
             url(../images/GA.jpg),
-            radial-gradient(#edd198,#9c651c);
+            radial-gradient(#edd198c5,#9c651cc2);
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
