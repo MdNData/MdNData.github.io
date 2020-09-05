@@ -176,6 +176,12 @@ nav > ul.social i , .fa-bars{
         font-family: 'Dancing Script', cursive, sans-serif;
         font-size: 10vw;
     }
+
+    .hero-servicii hr {
+        border-top: 1px solid black;
+        width: 15vw;
+        margin: 15vw auto 2vw auto;
+    }
     
 }
 
