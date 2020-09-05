@@ -43,6 +43,7 @@ nav > ul.social i , .fa-bars{
         height: 20vw;
         background: #FFF;
         top:0;
+        z-index: 40;
     }
     
     header nav {
@@ -154,6 +155,26 @@ nav > ul.social i , .fa-bars{
         font-weight: 700;
         z-index: 3;
         margin-top: -1vw;
+    }
+
+    .hero-servicii h2 {
+        font-size: 14vw;
+        font-family: 'Dancing Script', cursive, sans-serif;
+        text-align: center;
+        line-height: 35vw;
+    }
+
+    .hero-servicii p {
+        text-align: center;
+        color: #2c2c2c;
+        font-size: 8vw;
+        font-family: 'Lemonada', cursive;
+        font-weight: 300;
+    }
+
+    .hero-servicii p > span {
+        font-family: 'Dancing Script', cursive, sans-serif;
+        font-size: 10vw;
     }
     
 }
