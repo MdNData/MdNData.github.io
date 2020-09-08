@@ -1,4 +1,4 @@
-/* Img Hero Section Preloading  */
+// Img Hero Section Preloading 
 var imagePre1 = new Image();
 imagePre1.src="./images/21.jpg";
 var imagePre2 = new Image();
@@ -6,8 +6,17 @@ imagePre2.src="./images/manichiura.jpg";
 var imagePre3 = new Image();
 imagePre3.src="./images/pedichiura.jpg";
 
+//Img Welcome Section Preloading 
+var imagePre4 = new Image();
+imagePre4.src="./images/presentation-11.jpg";
+var imagePre5 = new Image();
+imagePre5.src="./images/presentation-22.jpg";
+var imagePre6 = new Image();
+imagePre6.src="./images/presentation-33.jpg";
+var imagePre7 = new Image();
+imagePre7.src="./images/presentation-44.jpg";
 
-/* Hero image changing  */
+// Hero image changing
 const heroToChange = document.getElementById('hero');
 const imgToChange = heroToChange.querySelector('img');
 const titleToChange = heroToChange.querySelector('div').querySelector('h1');
@@ -48,3 +57,34 @@ function nextImage() {
 }
 
 setInterval(nextImage, 5000);
+
+// Welcome image changing 
+const imgToChangeWelcome = document.getElementById('welcome-img');
+
+const displayWelcome = [
+    {
+        src:"./images/presentation-11.jpg"
+    },
+    {
+        src:"./images/presentation-22.jpg"
+    },
+    {
+        src:"./images/presentation-33.jpg"
+    },
+    {
+        src:"./images/presentation-44.jpg"
+    }
+]
+
+
+let y=0;
+function nextWelcomeImage() {
+    if(y === (displayWelcome.length-1)) {
+        y=0;
+    } else {
+        y+=1;
+    }
+    imgToChangeWelcome.src = displayWelcome[y].src;
+}
+
+setInterval(nextWelcomeImage, 8000);

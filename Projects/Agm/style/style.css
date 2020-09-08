@@ -156,6 +156,33 @@ nav > ul.social i , .fa-bars{
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
     }
 
+    .welcome {
+        background: linear-gradient(0deg, rgba(237, 209, 152, 0.171), rgba(237, 209, 152, 0.226));
+    }
+
+    /* Salon WELCOME */
+    .welcome h2{
+        font-family: 'Dancing Script', cursive, sans-serif;
+        font-size:10vw;
+        font-weight: 300;
+        padding-top: 20vw;
+        margin-bottom: 10vw;
+        text-align: center;
+        color: #2c2c2c;
+    }
+
+    .welcome img {
+        display: block;
+        width: 90vw;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    .welcome p {
+        margin: 10vw 5vw;
+        text-align: center;
+    }
+
 
     /* SERVICII  */
     .hero-servicii h2 {
