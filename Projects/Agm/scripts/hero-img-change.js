@@ -1,19 +1,8 @@
-// const currentImg = document.getElementById('f-hero-img');
-// const images = [];
-// let x = 0;
+/* Img Preloading  */
+var imagesPre = new Image();
+imagesPre.src="./images/pedichiura.jpg";
 
-// function nextImage() {
-//     if(x===1){
-//         currentImg.src="./images/2.jpg";
-//         x=0
-//     } else {
-//     currentImg.src = './images/1.jpg';
-//     x=1;
-//     }
-// }
-
-// setInterval(nextImage, 2000);
-
+/* Hero image changing  */
 const heroToChange = document.getElementById('hero');
 const imgToChange = heroToChange.querySelector('img');
 const titleToChange = heroToChange.querySelector('div').querySelector('h1');
@@ -33,7 +22,7 @@ const display = [
         button: 'Programeaza-te!'
     },
     {
-        img: './images/manichiura.jpg',
+        img: './images/pedichiura.jpg',
         title: 'Pedichiura',
         description: 'Picioarele sustin toata greutatea corpului. Ele merita sa fie rasfatate cu o pedichiura reusita.',
         button: 'Programeaza-te!'
@@ -53,4 +42,4 @@ function nextImage() {
     buttonToChange.innerHTML = display[x].button;
 }
 
-setInterval(nextImage, 8000);
+setInterval(nextImage, 5000);
