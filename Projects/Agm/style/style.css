@@ -165,8 +165,8 @@ nav > ul.social i , .fa-bars{
         font-family: 'Dancing Script', cursive, sans-serif;
         font-size:10vw;
         font-weight: 300;
-        padding-top: 20vw;
-        margin-bottom: 10vw;
+        padding-top: 16vw;
+        margin-bottom: 14vw;
         text-align: center;
         color: #2c2c2c;
     }
@@ -176,11 +176,22 @@ nav > ul.social i , .fa-bars{
         width: 90vw;
         max-height: 100%;
         margin: auto;
+        padding-bottom: 23vw;
     }
 
-    .welcome p {
-        margin: 10vw 5vw;
-        text-align: center;
+    .welcome span {
+        position: relative;
+        bottom: 54vw;
+        font-size: 7vw;
+        color: #2c2c2c8a;
+    }
+
+    .prev {
+        float: left;
+    }
+
+    .next {
+        float: right;
     }
 
 

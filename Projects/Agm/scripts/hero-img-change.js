@@ -60,6 +60,7 @@ setInterval(nextImage, 5000);
 
 // Welcome image changing 
 const imgToChangeWelcome = document.getElementById('welcome-img');
+const welcomeSection = document.getElementById('welcome-sec')
 
 const displayWelcome = [
     {
@@ -74,17 +75,28 @@ const displayWelcome = [
     {
         src:"./images/presentation-44.jpg"
     }
-]
+];
 
+let y = 0;
 
-let y=0;
-function nextWelcomeImage() {
-    if(y === (displayWelcome.length-1)) {
-        y=0;
-    } else {
-        y+=1;
+function changeWelcomeImg(e) {
+    if(e.target.tagName.toLowerCase()==='span' || e.target.tagName.toLowerCase()==='i' || e.target.id ==="prev") {
+        if(y === 0){
+            y=displayWelcome.length-1;
+        } else {
+            y-=1;
+        } 
+        imgToChangeWelcome.src = displayWelcome[y].src;
+    } else if (e.target.tagName.toLowerCase()==='span' || e.target.tagName.toLowerCase()==='i' || e.target.id ==="next") {
+        if(y === displayWelcome.length-1){
+            y=0;
+        } else {
+            y+=1;
+        } 
+        imgToChangeWelcome.src = displayWelcome[y].src;
     }
-    imgToChangeWelcome.src = displayWelcome[y].src;
 }
 
-setInterval(nextWelcomeImage, 8000);
+welcomeSection.addEventListener('click', changeWelcomeImg);
+
+
