@@ -1,5 +1,11 @@
 /* Img Preloading  */
 var imagePre1 = new Image();
+imagePre1.src="./images/21.jpg";
+var imagePre2 = new Image();
+imagePre2.src="./images/manichiura.jpg";
+var imagePre3 = new Image();
+imagePre3.src="./images/pedichiura.jpg";
+
 
 /* Hero image changing  */
 const heroToChange = document.getElementById('hero');
