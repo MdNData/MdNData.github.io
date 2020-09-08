@@ -1,4 +1,4 @@
-/* Img Preloading  */
+/* Img Hero Section Preloading  */
 var imagePre1 = new Image();
 imagePre1.src="./images/21.jpg";
 var imagePre2 = new Image();
@@ -29,7 +29,7 @@ const display = [
     {
         img: './images/pedichiura.jpg',
         title: 'Pedichiura',
-        description: 'Picioarele sustin toata greutatea corpului. Ele merita sa fie rasfatate cu o pedichiura reusita.',
+        description: 'Picioarele sustin toata greutatea corpului. <br /> Ele merita sa fie rasfatate cu o pedichiura reusita.',
         button: 'Programeaza-te!'
     }
 ];
