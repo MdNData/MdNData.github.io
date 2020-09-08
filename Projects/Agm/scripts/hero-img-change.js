@@ -1,6 +1,5 @@
 /* Img Preloading  */
-var imagesPre = new Image();
-imagesPre.src="./images/pedichiura.jpg";
+var imagePre1 = new Image();
 
 /* Hero image changing  */
 const heroToChange = document.getElementById('hero');
