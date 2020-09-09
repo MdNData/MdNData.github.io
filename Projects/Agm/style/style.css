@@ -176,10 +176,9 @@ nav > ul.social i , .fa-bars{
 
     .welcome img {
         display: block;
-        width: 90vw;
+        width: 100vw;
         max-height: 100%;
         margin: auto;
-        padding-bottom: 23vw;
     }
 
     .welcome span {
@@ -219,7 +218,7 @@ nav > ul.social i , .fa-bars{
         background-image: url(../images/epilation.png);
     }
     #second {
-        background-image: url(../images/24.jpg);
+        background-image: url(../images/manicure.png);
     }
     #third {
         background-image: url(../images/45.jpeg);
@@ -229,11 +228,15 @@ nav > ul.social i , .fa-bars{
     }
 
     .hero-servicii h2 {
-        font-size: 9vw;
-        font-family: 'Dancing Script', cursive, sans-serif;
         text-align: right;
         line-height: 20vw;
         margin-right: 2vw;
+    }
+
+    .hero-servicii h2 span {
+        font-size: 9vw;
+        font-family: 'Dancing Script', cursive, sans-serif;
+        text-shadow: 0 0 1px rgba(179, 120, 43, 0.411);
     }
 
     .hero-servicii p {
