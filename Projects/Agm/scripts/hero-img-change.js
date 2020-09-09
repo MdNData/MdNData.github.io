@@ -1,10 +1,18 @@
 // Img Hero Section Preloading 
+// var imagePre1 = new Image();
+// imagePre1.src="./images/21.jpg";
+// var imagePre2 = new Image();
+// imagePre2.src="./images/manichiura.jpg";
+// var imagePre3 = new Image();
+// imagePre3.src="./images/pedichiura.jpg";
+
+//products
 var imagePre1 = new Image();
-imagePre1.src="./images/21.jpg";
+imagePre1.src="./images/epilation-min-res.png";
 var imagePre2 = new Image();
-imagePre2.src="./images/manichiura.jpg";
+imagePre2.src="./images/manicure.png";
 var imagePre3 = new Image();
-imagePre3.src="./images/pedichiura.jpg";
+imagePre3.src="./images/45.jpeg";
 
 //Img Welcome Section Preloading 
 var imagePre4 = new Image();
