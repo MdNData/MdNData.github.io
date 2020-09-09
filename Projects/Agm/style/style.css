@@ -36,6 +36,14 @@ nav > ul.social i , .fa-bars{
     margin: auto 0;
 }
 
+.elegant-header {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size:10vw;
+    font-weight: 300;
+    text-align: center;
+    color: #2c2c2c;
+}
+
 @media only screen and (orientation: portrait) {
     /* TOP NAVIGATION BAR SOCIAL */
     header {
@@ -93,8 +101,8 @@ nav > ul.social i , .fa-bars{
     .hero {
         display: flex;
         width: 100%;
-        height: 32vh;
         background: #edd198;
+        padding: 1vw 0;
     }
 
     .hero img {
@@ -162,13 +170,8 @@ nav > ul.social i , .fa-bars{
 
     /* Salon WELCOME */
     .welcome h2{
-        font-family: 'Dancing Script', cursive, sans-serif;
-        font-size:10vw;
-        font-weight: 300;
-        padding-top: 16vw;
+        padding-top: 12vw;
         margin-bottom: 14vw;
-        text-align: center;
-        color: #2c2c2c;
     }
 
     .welcome img {
@@ -182,8 +185,8 @@ nav > ul.social i , .fa-bars{
     .welcome span {
         position: relative;
         bottom: 54vw;
-        font-size: 7vw;
-        color: #2c2c2c8a;
+        font-size: 8.5vw;
+        color: #2c2c2c54;
     }
 
     .prev {
@@ -196,31 +199,78 @@ nav > ul.social i , .fa-bars{
 
 
     /* SERVICII  */
-    .hero-servicii h2 {
-        font-size: 14vw;
-        font-family: 'Dancing Script', cursive, sans-serif;
+    .hero-servicii > h2.elegant-header {
+        padding-top: 5vw;
+        font-size: 13vw;
+        line-height: 16vw;
         text-align: center;
-        line-height: 35vw;
+    }
+
+    .hero-servicii div {
+        width: 90vw;
+        margin: 5vw auto;
+        border-radius: 3vw;
+        background-size: cover;
+        background-color: rgba(237, 209, 152, 0.226);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+    }
+
+    #first {
+        background-image: url(../images/epilation.png);
+    }
+    #second {
+        background-image: url(../images/24.jpg);
+    }
+    #third {
+        background-image: url(../images/45.jpeg);
+    }
+    #fourth {
+        background-image: url(../images/epilation.png);
+    }
+
+    .hero-servicii h2 {
+        font-size: 9vw;
+        font-family: 'Dancing Script', cursive, sans-serif;
+        text-align: right;
+        line-height: 20vw;
+        margin-right: 2vw;
     }
 
     .hero-servicii p {
-        text-align: center;
+        text-align: right;
         color: #2c2c2c;
-        font-size: 8vw;
+        font-size: 5vw;
         font-family: 'Lemonada', cursive;
         font-weight: 300;
         margin: auto auto;
+        margin-right: 3vw;
     }
 
     .hero-servicii p > span {
         font-family: 'Dancing Script', cursive, sans-serif;
-        font-size: 10vw;
+        font-size: 6vw;
     }
 
-    .hero-servicii hr {
-        border-top: 1px solid black;
-        width: 15vw;
-        margin: 15vw auto 2vw auto;
+    .hero-servicii a {
+        font-family: 'Dancing Script', cursive, sans-serif;
+        font-size: 6vw;
+        color: #FFF	;
+        font-weight: 300;
+        text-shadow: 0px 0px 5px #b3782b;
+        line-height: 9vw;
+        font-weight: 700;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 62vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 20vw;
+        z-index: 3;
+        background: #dfa344;
+        border-radius: 25vw;
+        text-decoration: none;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63);
     }
     
 }
