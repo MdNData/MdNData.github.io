@@ -169,8 +169,19 @@ nav > ul.social i , .fa-bars{
     } */
 
     /* Salon WELCOME */
+
+    .welcome h1 {
+        font-size: 10vw;
+        text-align: center;
+        font-weight: 300;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.219);
+        display: block;
+        line-height: 8vw;
+        padding: 7vw 0;
+    }
+
     .welcome h2{
-        font-size: 18vw;
+        font-size: 10vw;
     }
 
     .welcome img {
@@ -202,10 +213,11 @@ nav > ul.social i , .fa-bars{
 
     /* SERVICII  */
     .hero-servicii > h2.elegant-header {
-        padding-top: 5vw;
-        font-size: 14vw;
-        line-height: 16vw;
+        padding: 5vw 0;
+        font-size: 10vw;
+        line-height: 9vw;
         text-align: center;
+        margin-right: 0;
     }
 
     .hero-servicii div {
