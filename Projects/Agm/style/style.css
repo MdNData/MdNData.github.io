@@ -98,7 +98,7 @@ nav > ul.social i , .fa-bars{
     }
 
     /* HERO SECTION  */
-    .hero {
+    /* .hero {
         display: flex;
         width: 100%;
         background: #edd198;
@@ -166,41 +166,44 @@ nav > ul.social i , .fa-bars{
 
     .welcome {
         background: linear-gradient(0deg, rgba(237, 209, 152, 0.171), rgba(237, 209, 152, 0.226));
-    }
+    } */
 
     /* Salon WELCOME */
     .welcome h2{
-        padding-top: 12vw;
-        margin-bottom: 14vw;
+        font-size: 18vw;
     }
 
     .welcome img {
         display: block;
-        width: 100vw;
+        width: 96vw;
         max-height: 100%;
-        margin: auto;
+        margin: 2vw;
+        border-radius: 2vw;
     }
 
     .welcome span {
         position: relative;
-        bottom: 54vw;
-        font-size: 8.5vw;
-        color: #2c2c2c54;
+        bottom: 39vw;
+        font-size: 10vw;
+        color: #2c2c2c70;
+        text-shadow: 0 0 1px#FFF;
     }
 
     .prev {
         float: left;
+        margin-left: 2vw;
     }
 
     .next {
         float: right;
+        margin-right: 2vw;
     }
 
 
     /* SERVICII  */
     .hero-servicii > h2.elegant-header {
         padding-top: 5vw;
-        font-size: 13vw;
+        font-size: 14vw;
         line-height: 16vw;
         text-align: center;
     }
