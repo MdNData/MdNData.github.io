@@ -196,7 +196,7 @@ nav > ul.social i , .fa-bars{
         position: relative;
         bottom: 39vw;
         font-size: 10vw;
-        color: #2c2c2c70;
+        color: #2c2c2cb2;
         text-shadow: 0 0 1px#FFF;
     }
 
@@ -269,7 +269,7 @@ nav > ul.social i , .fa-bars{
         font-size: 6vw;
     }
 
-    .hero-servicii a {
+    .hero-servicii a, .elegant-button {
         font-family: 'Dancing Script', cursive, sans-serif;
         font-size: 6vw;
         color: #FFF	;

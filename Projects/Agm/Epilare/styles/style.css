@@ -1,3 +1,32 @@
 video {
     width: 100vw;
 }
+
+.welcome {
+    background-color: rgba(237, 209, 152, 0.164);
+    padding-bottom: 5vw;
+}
+
+.welcome p {
+    font-family: 'Lemonada', cursive;
+    font-weight: 300;
+    margin: 1vw 15vw;
+    font-size: 3.4vw;
+    line-height: 5.5vw;
+    opacity: 0.8;
+}
+
+.welcome > h1.elegant-header {
+    margin-top: -4vw;
+    line-height: 15vw;
+    font-size: 13vw;
+    padding-bottom: 2vw;
+}
+
+.elegant-button {
+    display: block;
+    position: static;
+    margin: 5vw auto;
+    width: 44vw;
+    line-height: 11vw;
+}

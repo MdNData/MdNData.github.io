@@ -6,7 +6,7 @@
 // var imagePre3 = new Image();
 // imagePre3.src="./images/pedichiura.jpg";
 
-//products
+//preload services images
 var imagePre1 = new Image();
 imagePre1.src="./images/epilation-min-res.png";
 var imagePre2 = new Image();
@@ -14,7 +14,7 @@ imagePre2.src="./images/manicure.png";
 var imagePre3 = new Image();
 imagePre3.src="./images/45.jpeg";
 
-//Img Welcome Section Preloading 
+//welcome carousel Preloading images
 var imagePre4 = new Image();
 imagePre4.src="./images/s11.jpg";
 var imagePre5 = new Image();
@@ -24,7 +24,7 @@ imagePre6.src="./images/s33.jpg";
 var imagePre7 = new Image();
 imagePre7.src="./images/s44.jpg";
 
-// Welcome image changing 
+// Welcome carousel image changing 
 const imgToChangeWelcome = document.getElementById('welcome-img');
 const welcomeSection = document.getElementById('welcome-sec')
 
