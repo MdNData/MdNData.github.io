@@ -21,15 +21,23 @@
 }
 
 .welcome img {
-    width: 70vw;
+    width: 90vw;
     display: block;
-    margin: 10vw auto;
+    margin: 5vw auto;
+    height: 40vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+span.next, span.prev {
+    bottom: 45vw;
+    margin: 0 5vw;
 }
 
 .elegant-button {
     display: block;
     position: static;
-    margin: 4vw auto;
+    margin: 0 auto;
     width: 64vw;
     line-height: 16vw;
     font-size: 7.5vw;
