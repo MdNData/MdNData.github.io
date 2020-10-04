@@ -10,10 +10,10 @@
     padding-bottom: 2vw;
 }
 
-.welcome p {
+.elegant-explanation {
     font-family: 'Lemonada', cursive;
     font-weight: 300;
-    margin: 5vw 11vw;
+    margin: 5vw 4vw;
     font-size: 3.6vw;
     line-height: 5.5vw;
     opacity: 0.8;
@@ -30,7 +30,61 @@
     display: block;
     position: static;
     margin: 4vw auto;
-    width: 64vw;
+    width: 60vw;
     line-height: 16vw;
     font-size: 7.5vw;
+}
+
+.preturi div > h1 {
+    margin: 8vw 0;
+    font-size: 12.5vw;
+}
+
+.preturi p.elegant-explanation {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 1vw;
+    font-size: 4vw;
+    opacity: 1;
+    margin: 0;
+    height: 10vw;
+}
+
+.elegant-explanation i {
+    display: inline-flex;
+    font-size: 6vw;
+    width: 9vw;
+    padding-top: -1vw;
+}
+
+.elegant-explanation i::before {
+}
+
+.elegant-explanation span.ext {
+    position: absolute;
+    font-size: 6vw;
+    right: 5vw;
+    font-family: "Lemonada", cursive;
+    line-height: 7vw;
+}
+
+.internal {
+    font-size: 5vw;
+    font-family: "Lemonada", cursive;
+}
+
+.preturi div div {
+    display: flex;
+    margin: 0 auto;
+    width: 90vw;
+    height: 11vw;
+    align-items: center;
+}
+
+hr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    width: 56vw;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
 }
