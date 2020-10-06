@@ -30,7 +30,7 @@
 }
 
 span.next, span.prev {
-    bottom: 45vw;
+    bottom: 50vw;
     margin: 0 5vw;
 }
 
@@ -41,4 +41,39 @@ span.next, span.prev {
     width: 64vw;
     line-height: 16vw;
     font-size: 7.5vw;
+    flex-wrap: wrap;
+}
+
+.preturi div div {
+    height: auto !important;
+    min-height: 20vw;
+}
+
+.elegant-subexplanation {
+    font-family: 'Lemonada';
+    font-weight: 300;
+    font-size: 3vw;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 0vw;
+    line-height: 4vw;
+    margin-bottom: 3vw;
+}
+
+.elegant-subexplanation span.ext {
+    position: absolute;
+    font-size: 6vw;
+    right: 5vw;
+    font-family: "Lemonada", cursive;
+    line-height: 7vw;
+    margin-top: -4.2vw;
+    opacity: 1;
+}
+
+.preturi p.elegant-explanation {
+}
+
+div + div > p {
+    margin-top: 3vw;
 }

@@ -79,6 +79,7 @@
     width: 90vw;
     height: 11vw;
     align-items: center;
+    flex-wrap : wrap;
 }
 
 hr {
