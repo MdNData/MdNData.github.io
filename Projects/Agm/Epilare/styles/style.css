@@ -77,9 +77,10 @@
     display: flex;
     margin: 0 auto;
     width: 90vw;
-    height: 11vw;
+    height: 15vw;
     align-items: center;
     flex-wrap : wrap;
+    margin-top: 1vw;
 }
 
 hr {
@@ -88,4 +89,5 @@ hr {
     height: 1px;
     display: block;
     margin: 0 auto;
+    margin-top: -1.5vw;
 }
